@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 /*
 Thin            100     
 Extra Light     200
@@ -20,19 +20,19 @@ body {
   background-repeat: repeat-x;
   background-position: center top;
   background-attachment: fixed;
-  background-clip: content-box; 
+  background-clip: content-box;
   margin: 0px 75px 0px 75px;
 }
 h1 {
   color: black;
   font-family: Roboto;
-  font-weight:700;
+  font-weight: 700;
   font-size: 42px;
 }
 h2 {
   color: black;
   font-family: Roboto;
-  font-weight:500;
+  font-weight: 500;
   font-size: 22px;
   padding-left: 40px;
 }
@@ -44,7 +44,7 @@ h3 {
 }
 p {
   color: black;
-  font-family:  Roboto;
+  font-family: Roboto;
   font-weight: 400;
   font-size: 18px;
 }
@@ -115,6 +115,11 @@ li a:hover:not(.active) {
   text-decoration: underline;
 }
 .active {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.ausdruck {
   font-size: 22px;
   font-weight: 700;
 }
