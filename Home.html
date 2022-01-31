@@ -580,7 +580,7 @@
         <tspan x="95.75" y="0">e</tspan>
       </text>
       <line class="cls-28" x1="511.38" y1="881.74" x2="525.47" y2="897.31" />
-      <g id="dot" display="unset"><circle id="dot1" class="cls-19" cx="576" cy="328" r="13" /></g>
+      <g display="unset"><circle id="dot1" class="cls-19" cx="576" cy="328" r="13" /></g>
     </svg>
 
 
@@ -605,11 +605,13 @@
         // Lexikoneintrag anzeigen
       }
 
-      text.onclick = function () {
-        document.getElementsByClassName('cls-21').style.color = 'red'
+      dot1.onclick = function () {
+        window.location = "Lexikon.html";
+        // Lexikoneintrag anzeigen
       }
-      weitere.onclick = function () {
-        document.getElementsById("dot1").setAttribute("r", 50);
+
+      dot1.onclick = function () {
+        document.getElementsById('dot1').setAttribute("visibility", 'none');
         // Lexikoneintrag anzeigen
       }
 
