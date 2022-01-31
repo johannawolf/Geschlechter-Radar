@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/*
+Thin            100     
+Extra Light     200
+Light           300
+Regular         400
+Medium          500
+Semi-Bold       600
+Bold            700
+Extra-Bold      800
+Black           900
+*/
+
+html {
+  background-image: url(file:///users/jhalfman/desktop/Radar/website/Background_1-01.png);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+body {
+  background-repeat: repeat-x;
+  background-position: center top;
+  background-attachment: fixed;
+  background-clip: content-box; 
+  margin: 0px 75px 0px 75px;
+}
+h1 {
+  color: black;
+  font-family: Roboto;
+  font-weight:700;
+  font-size: 42px;
+}
+h2 {
+  color: black;
+  font-family: Roboto;
+  font-weight:500;
+  font-size: 22px;
+  padding-left: 40px;
+}
+h3 {
+  color: black;
+  font-family: Roboto;
+  font-weight: 400;
+  padding-left: 40px;
+}
+p {
+  color: black;
+  font-family:  Roboto;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+svg {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+}
+
+.Ring2 {
+  padding-top: 90px;
+}
+/* cls-Übersicht:
+
+1   Hintergrund, ohne Rahmen
+2   Rahmen des Hintergrundes
+3   Pizza Grenzen??
+4   Innere Kreis
+5   alle einzelnen Buchstaben der Pizzabeschriftungen
+6   GESCHLECHT
+7   H in GESCHLECHT
+8   T in GESCHLECHT
+9   alle einzelnen Worte aus dem Ring
+10  r in traditionell
+11  erstes r in progressiv
+12  zweites r in progressiv
+
+.cls-1:hover {
+  fill: lightblue;
+}
+.cls-12:hover {
+  fill: #ec008c;
+}
+/*GESCHLECHT
+.cls-6:hover {
+  fill: lightgreen;
+}
+/* Worte Ring 
+.cls-9:hover {
+  fill: yellow;
+}
+*/
+
+img {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: Roboto;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  font-size: 22px;
+  padding: 0px 5px;
+  text-decoration: none;
+}
+li a:hover:not(.active) {
+  text-decoration: underline;
+}
+.active {
+  font-size: 22px;
+  font-weight: 700;
+}
