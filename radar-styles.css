@@ -15,7 +15,6 @@ html {
   background-image: url(Background.png);
   background-size: 100% 100%;
   background-attachment: fixed;
-  background-color: #f7f7f7;
 }
 body {
   background-repeat: repeat-x;
