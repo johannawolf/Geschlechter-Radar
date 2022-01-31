@@ -3,12 +3,16 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="radar-styles.css" />
-    <a href="Home.html"><img   
-      src="Logo.svg"
-      style="min-width: 5%; max-width: 300px; height: auto;"
-    /></a>
+    <title>Geschlechter-Radar</title>
+
   </head>
   <body>
+  <header>
+    <a href="Home.html"><img
+            src="Logo.svg"
+            style="min-width: 5%; max-width: 300px; height: auto;"
+    /></a>
+  </header>
     <ul>
       <li>
         <a
@@ -403,7 +407,7 @@
       <text class="cls-21" transform="translate(1202 75.8)">
         [ ] Eiers
         <tspan class="cls-22" x="112.25" y="0">t</tspan>
-        <tspan x="123.47" y="0">öc</tspan>
+        <tspan x="123.47" y="0">&ouml;c</tspan>
         <tspan class="cls-22" x="162.18" y="0">k</tspan>
         <tspan x="179.46" y="0">e</tspan>
         <tspan x="0" y="43.2">[ ] Hoden</tspan>
@@ -580,43 +584,55 @@
         <tspan x="95.75" y="0">e</tspan>
       </text>
       <line class="cls-28" x1="511.38" y1="881.74" x2="525.47" y2="897.31" />
-      <g ><circle id="dot1" class="cls-19" cx="576" cy="328" r="13" /></g>
+      <g ><circle id="dot1" class="cls-19 draggable" cx="576" cy="328" r="13" dragstart="576" dragend="830" />
+        <circle id="dot2" class="cls-19 draggable" cx="576" cy="257" r="13" dragstart="576" dragend="830" />
+        <circle id="dot3" class="cls-19 draggable" cx="576" cy="190" r="13" dragstart="576" dragend="830" />
+      </g>
+    </g>
     </svg>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
 
     <script language="javascript" type="text/javascript">
 
-      p.onclick = function () {
-        document.getElementById('p').style.color = 'red'
+      document.addEventListener('DOMContentLoaded', function () {
+        p.onclick = function () {
+          document.getElementById('p').style.color = 'red'
+        }
+
+        Hintergrund.onclick = function () {
+          document.getElementById('Ring').style.display = 'none'
+          document.getElementById('Ring2').style.display = 'unset'
+        }
+
+        Hintergrund.onmouseover = function () {
+          // TO DO Lexikoneintrag anzeigen
+        }
+
+        inter.onclick = function () {
+          window.location = "Lexikon.html";
+          // Lexikoneintrag anzeigen
+        }
+
+        // TO DO Checkboxes
+
+        // TO DO Punkte setzen
+
+        // TO DO Punkte Drag & Drop
+
+        let drag = d3.drag().on("drag", dragmove);
+
+        function dragmove(d) {
+          let x = d.x;
+          let y = d.y;
+        console.log(d3.select(this).attr("dragstart"));
+          if (x > d3.select(this).attr("dragstart") && x < d3.select(this).attr("dragend")){
+            d3.select(this).attr("cx", x);
+          }
       }
-
-      Hintergrund.onclick = function () {
-        document.getElementById('Ring').style.display = 'none'
-        document.getElementById('Ring2').style.display = 'unset'
+        d3.selectAll(".draggable").call(drag);
       }
-
-      Hintergrund.onmouseover = function () {
-        // TO DO Lexikoneintrag anzeigen
-      }
-
-      inter.onclick = function () {
-        window.location = "Lexikon.html";
-        // Lexikoneintrag anzeigen
-      }
-
-    
-
-      dot1.onclick = function () {
-        document.getElementsById('dot1').setAttribute('cx', '800');
-        // Lexikoneintrag anzeigen
-      }
-
-      // TO DO Checkboxes
-
-      // TO DO Punkte setzen
-
-      // TO DO Punkte Drag & Drop
+      )
 
     </script>
   </body>
