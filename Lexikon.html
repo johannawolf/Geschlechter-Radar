@@ -15,22 +15,25 @@
         <li><a href="About.html">About</a></li>
       </ul>
 
-     <p id="Ausdruck">
+     <h2 id="Ausdruck">
         Ausdruck
-         </p>
+     </h2>
 
     <p id="ausdruck">
       Als Ausdruck wird hier alles nach außen Wirkende eines Menschen bezeichnet, also das Aussehen, die Kleidung, die Frisur, Körperbehaarung, die Stimme, Körperform, die Art der Kommunikation und Körpersprache.
     </p>
 
     <script type="text/javascript">
+
+document.getElementById("ausdruck").style.visibility = "hidden";
+  
      
   Ausdruck.onclick=function () {
   var x = document.getElementById("ausdruck");
-  if (x.style.display === "none") {
-    x.style.display = "block";
+  if (x.style.visibility === "hidden") {
+    x.style.visibility = "visible";
   } else {
-    x.style.display = "none";
+    x.style.visibility = "hidden";
   } 
 }
 
