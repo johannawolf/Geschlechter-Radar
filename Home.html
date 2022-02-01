@@ -143,6 +143,13 @@
             fill: gray;
           }
 
+          .XRASP {
+            font-size: 37px;
+            font-family: Roboto-Bold, Roboto;
+            font-weight: 300;
+            fill: gray;
+          }
+
         </style>
         -->
         <radialGradient
@@ -584,9 +591,51 @@
         <tspan x="95.75" y="0">e</tspan>
       </text>
       <line class="cls-28" x1="511.38" y1="881.74" x2="525.47" y2="897.31" />
-      <g ><circle id="dot1" class="cls-19 draggable" cx="576" cy="328" r="13" dragstart="576" dragend="830" />
-        <circle id="dot2" class="cls-19 draggable" cx="576" cy="257" r="13" dragstart="576" dragend="830" />
-        <circle id="dot3" class="cls-19 draggable" cx="576" cy="190" r="13" dragstart="576" dragend="830" />
+      <g >
+        <circle id="dot1" class="cls-19 draggable" cx="576" cy="328" r="13" dragstart="576" dragend="830" /> weitere
+        <circle id="dot2" class="cls-19 draggable" cx="576" cy="257" r="13" dragstart="576" dragend="830" /> m
+        <circle id="dot3" class="cls-19 draggable" cx="576" cy="190" r="13" dragstart="576" dragend="830" /> w
+        <circle id="dot4" class="cls-19 draggable" cx="1152" cy="199" r="13" dragstart="1152" dragend="1410" /> p-k
+        <circle id="dot5" class="cls-19 draggable" cx="1044" cy="105" r="13" />
+        <circle id="dot6" class="cls-19 draggable" cx="1044" cy="62" r="13" />
+        <circle id="dot7" class="cls-19 draggable" cx="1215" cy="107" r="13" />
+        <circle id="dot8" class="cls-19 draggable" cx="1215" cy="63" r="13" /> 
+        <circle id="dot9" class="cls-19 draggable" cx="1237" cy="435" r="13" />
+        <circle id="dot10" class="cls-19 draggable" cx="1237" cy="391" r="13" />
+        <circle id="dot11" class="cls-19 draggable" cx="1237" cy="349" r="13" />
+        <circle id="dot12" class="cls-19 draggable" cx="1536" cy="349" r="13" />
+        <circle id="dot13" class="cls-19 draggable" cx="1536" cy="390" r="13" />
+        <circle id="dot14" class="cls-19 draggable" cx="1574" cy="762" r="13" dragstart="1574" dragend="1826" /> w
+        <circle id="dot15" class="cls-19 draggable" cx="1574" cy="830" r="13" dragstart="1574" dragend="1826" /> m
+        <circle id="dot16" class="cls-19 draggable" cx="1574" cy="897" r="13" dragstart="1574" dragend="1826" /> weit
+        <circle id="dot17" class="cls-19 draggable" cx="1569" cy="977" r="13" />
+        <circle id="dot18" class="cls-19 draggable" cx="1569" cy="1020" r="13" />
+        <circle id="dot19" class="cls-19 draggable" cx="1569" cy="1065" r="13" />
+        <circle id="dot20" class="cls-19 draggable" cx="1569" cy="1108" r="13" />
+        <circle id="dot21" class="cls-19 draggable" cx="1569" cy="1194" r="13" />
+        <circle id="dot21" class="cls-19 draggable" cx="1569" cy="1238" r="13" />
+        <circle id="dot22" class="cls-19 draggable" cx="941" cy="1368" r="13" dragstart="941" dragend="1194" /> w
+        <circle id="dot23" class="cls-19 draggable" cx="941" cy="1435" r="13" dragstart="941" dragend="1194" /> m
+        <circle id="dot24" class="cls-19 draggable" cx="941" cy="1504" r="13" dragstart="941" dragend="1194" /> weit
+      </g>
+      <g id="xrasp">
+        <text id ="p1" class="XRASP draggable" transform="translate(238 1161)" dragstartx="238" dragendx="328" dragstarty="1161" dragendy="1361">P</text>
+        <text id ="s1" class="XRASP draggable" transform="translate(238 1118)">S</text>
+        <text id ="a1" class="XRASP draggable" transform="translate(238 1075)">A</text>
+        <text id ="r1" class="XRASP draggable" transform="translate(238 1031)">R</text>
+        <text id ="x1" class="XRASP draggable" transform="translate(237 988)">X</text>
+
+        <text id ="p2" class="XRASP draggable" transform="translate(238 1161)">P</text>
+        <text id ="s2" class="XRASP draggable" transform="translate(238 1118)">S</text>
+        <text id ="a2" class="XRASP draggable" transform="translate(238 1075)">A</text>
+        <text id ="r2" class="XRASP draggable" transform="translate(238 1031)">R</text>
+        <text id ="x2" class="XRASP draggable" transform="translate(237 988)">X</text>
+
+        <text id ="p3" class="XRASP draggable" transform="translate(238 1161)">P</text>
+        <text id ="s3" class="XRASP draggable" transform="translate(238 1118)">S</text>
+        <text id ="a3" class="XRASP draggable" transform="translate(238 1075)">A</text>
+        <text id ="r3" class="XRASP draggable" transform="translate(238 1031)">R</text>
+        <text id ="x3" class="XRASP draggable" transform="translate(237 988)">X</text>
       </g>
     </g>
     </svg>
@@ -615,9 +664,7 @@
         }
 
         // TO DO Checkboxes
-
         // TO DO Punkte setzen
-
         // TO DO Punkte Drag & Drop
 
         let drag = d3.drag().on("drag", dragmove);
@@ -628,6 +675,12 @@
         console.log(d3.select(this).attr("dragstart"));
           if (x > d3.select(this).attr("dragstart") && x < d3.select(this).attr("dragend")){
             d3.select(this).attr("cx", x);
+                              //  cx="941"
+          }
+          if (x > d3.select(this).attr("dragstartx") && x < d3.select(this).attr("dragendx") &&
+              y > d3.select(this).attr("dragstarty") && y < d3.select(this).attr("dragendy") ){
+            d3.select(this).attr("transform" , "translate(" + x + " " + y + ")");
+                                // transform="translate(237 988)"
           }
       }
         d3.selectAll(".draggable").call(drag);
@@ -638,7 +691,24 @@
   </body>
 </html>
 
-    <!--  cls-Übersicht:
+    <!--        
+    
+1 weitere
+2 m
+3 w
+4 p-k
+14 w
+15 m
+16 weitere
+22 w
+23 m
+24 weitere
+      
+      
+      
+      
+      
+      cls-Übersicht:
 
 1   Hintergrund, ohne Rahmen
 2   Rahmen des Hintergrundes
