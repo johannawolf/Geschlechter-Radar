@@ -53,11 +53,17 @@ svg {
   padding-left: 40px;
   padding-right: 40px;
   padding-bottom: 40px;
+  user-select: none;
 }
 
 .Ring2 {
   padding-top: 90px;
 }
+
+.draggableLetter, .draggable {
+  cursor: pointer;
+}
+
 /* cls-Übersicht:
 
 1   Hintergrund, ohne Rahmen
