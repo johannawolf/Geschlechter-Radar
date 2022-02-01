@@ -3,7 +3,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="radar-styles.css" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Geschlechter-Radar</title>
   </head>
   <body>
@@ -34,10 +34,10 @@
       </li>
     </ul>
 
-    <p id="p">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor consectetur incididunt ut labore et dolore magna aliqua.
-    </p>
+    <p id="p"> "Geschlecht" ist nicht so einfach, wie es scheint. Das Geschlechter-Radar soll es
+      jeder Person ermöglichen sein Geschlecht darzustellen. Wie genau das funktioniert? 
+      Schau dir dafür das kurze Video an.</p>
+<p>Viel Spaß damit!</p>
 
     <video width="100%" src="Strobo_Bunt_Main.mp4" controls></video>
 
@@ -409,7 +409,7 @@
           <tspan x="0" y="43.2">[ ]</tspan>
           <tspan class="cls-23" x="34.77" y="43.2">V</tspan>
           <tspan x="56.16" y="43.2">agina</tspan>
-          <tspan x="0" y="86.4">[ ] Uterus</tspan>
+          <tspan id="uterus" x="0" y="86.4">[ ] Uterus</tspan>
         </text>
         <text class="cls-21" transform="translate(1202 75.8)">
           [ ] Eiers
@@ -443,15 +443,15 @@
           <tspan class="cls-22" x="170.42" y="86.4">r</tspan>
           <tspan x="182.18" y="86.4">on</tspan>
         </text>
-        <line class="cls-27" x1="1139" y1="198.8" x2="1425" y2="198.8" />
+        <line class="cls-27" x1="1170" y1="198.8" x2="1425" y2="198.8" />
         <line class="cls-28" x1="1424" y1="209.8" x2="1424" y2="188.8" />
-        <line class="cls-28" x1="1139" y1="209.8" x2="1139" y2="188.8" />
-        <text class="cls-21" transform="translate(1449 209.61)">
+        <line class="cls-28" x1="1170" y1="209.8" x2="1170" y2="188.8" />
+        <text class="cls-21" transform="translate(1030.84 209.61)">
           Kli
           <tspan class="cls-22" x="38.85" y="0">t</tspan>
           <tspan x="50.06" y="0">oris</tspan>
         </text>
-        <text class="cls-21" transform="translate(1030.84 210.02)">
+        <text class="cls-21" transform="translate(1450 210.02)">
           <tspan class="cls-29">P</tspan>
           <tspan x="21.94" y="0">enis</tspan>
         </text>
@@ -631,7 +631,7 @@
           <tspan x="95.75" y="0">e</tspan>
         </text>
         <line class="cls-28" x1="511.38" y1="881.74" x2="525.47" y2="897.31" />
-        <g>
+        <g id="dots">
           <circle
             id="dot1"
             class="cls-19 draggable"
@@ -665,11 +665,11 @@
           <circle
             id="dot4"
             class="cls-19 draggable"
-            cx="1152"
+            cx="1295"
             cy="199"
             r="13"
-            dragstart="1152"
-            dragend="1410"
+            dragstart="1184"
+            dragend="1412"
           />
           p-k
           <circle
@@ -678,16 +678,19 @@
             cx="1044"
             cy="105"
             r="13"
-            display="unset"
+            visibility="hidden"
           />
           <circle id="dot6" class="cls-19" cx="1044" cy="62" r="13" />
+          vagina
           <circle id="dot7" class="cls-19" cx="1215" cy="107" r="13" />
+          hoden
           <circle id="dot8" class="cls-19" cx="1215" cy="63" r="13" />
+          euerstücke
           <circle id="dot9" class="cls-19" cx="1237" cy="435" r="13" />
           <circle id="dot10" class="cls-19" cx="1237" cy="391" r="13" />
           <circle id="dot11" class="cls-19" cx="1237" cy="349" r="13" />
           <circle id="dot12" class="cls-19" cx="1536" cy="349" r="13" />
-          <circle id="dot13" class="cls-19" cx="1536" cy="390" r="13" />
+          <circle id="dot13" class="cls-19" cx="1536" cy="392" r="13" />
           <circle
             id="dot14"
             class="cls-19 draggable"
@@ -718,7 +721,7 @@
             dragend="1826"
           />
           weit
-          <circle id="dot17" class="cls-19" cx="1569" cy="977" r="13" />
+          <circle id="dot17" class="cls-19" cx="1569" cy="978" r="13" />
           <circle id="dot18" class="cls-19" cx="1569" cy="1020" r="13" />
           <circle id="dot19" class="cls-19" cx="1569" cy="1065" r="13" />
           <circle id="dot20" class="cls-19" cx="1569" cy="1108" r="13" />
@@ -760,65 +763,167 @@
             id="p1"
             class="XRASP draggableLetter"
             transform="translate(238 1161)"
-            dragstartx="238"
-            dragendx="328"
-            dragstarty="1161"
-            dragendy="1361"
+            dragstartx="200"
+            dragendx="510"
+            dragstarty="750"
+            dragendy="1261"
           >
             P
           </text>
-          <text id="s1" class="XRASP draggableLetter" transform="translate(238 1118)">
+          <text
+            id="s1"
+            class="XRASP draggableLetter"
+            transform="translate(238 1118)"
+            dragstartx="200"
+            dragendx="510"
+            dragstarty="750"
+            dragendy="1261"
+          >
             S
           </text>
-          <text id="a1" class="XRASP draggableLetter" transform="translate(238 1075)">
+          <text
+            id="a1"
+            class="XRASP draggableLetter"
+            transform="translate(238 1075)"
+            dragstartx="200"
+            dragendx="510"
+            dragstarty="750"
+            dragendy="1261"
+          >
             A
           </text>
-          <text id="r1" class="XRASP draggableLetter" transform="translate(238 1031)">
+          <text
+            id="r1"
+            class="XRASP draggableLetter"
+            transform="translate(238 1031)"
+            dragstartx="200"
+            dragendx="510"
+            dragstarty="750"
+            dragendy="1261"
+          >
             R
           </text>
-          <text id="x1" class="XRASP draggableLetter" transform="translate(237 988)">
+          <text
+            id="x1"
+            class="XRASP draggableLetter"
+            transform="translate(237 988)"
+            dragstartx="200"
+            dragendx="510"
+            dragstarty="750"
+            dragendy="1261"
+          >
             X
           </text>
 
-          <text id="p2" class="XRASP draggableLetter"
-                transform="translate(238 1161)"
-                dragstartx="238"
-                dragendx="328"
-                dragstarty="1161"
-                dragendy="1361">
+          <text
+            id="p2"
+            class="XRASP draggableLetter"
+            transform="translate(238 1161)"
+            dragstartx="200"
+            dragendx="510"
+            dragstarty="750"
+            dragendy="1261"
+          >
             P
           </text>
-          <text id="s2" class="XRASP draggableLetter" transform="translate(238 1118)">
+          <text
+            id="s2"
+            class="XRASP draggableLetter"
+            transform="translate(238 1118)"
+            dragstartx="200"
+            dragendx="510"
+            dragstarty="750"
+            dragendy="1261"
+          >
             S
           </text>
-          <text id="a2" class="XRASP draggableLetter" transform="translate(238 1075)">
+          <text
+            id="a2"
+            class="XRASP draggableLetter"
+            transform="translate(238 1075)"
+            dragstartx="200"
+            dragendx="510"
+            dragstarty="750"
+            dragendy="1261"
+          >
             A
           </text>
-          <text id="r2" class="XRASP draggableLetter" transform="translate(238 1031)">
+          <text
+            id="r2"
+            class="XRASP draggableLetter"
+            transform="translate(238 1031)"
+            dragstartx="200"
+            dragendx="510"
+            dragstarty="750"
+            dragendy="1261"
+          >
             R
           </text>
-          <text id="x2" class="XRASP draggableLetter" transform="translate(237 988)">
+          <text
+            id="x2"
+            class="XRASP draggableLetter"
+            transform="translate(237 988)"
+            dragstartx="200"
+            dragendx="510"
+            dragstarty="750"
+            dragendy="1261"
+          >
             X
           </text>
 
-          <text id="p3" class="XRASP draggableLetter"
-                transform="translate(238 1161)"
-                dragstartx="238"
-                dragendx="328"
-                dragstarty="1161"
-                dragendy="1361">
+          <text
+            id="p3"
+            class="XRASP draggableLetter"
+            transform="translate(238 1161)"
+            dragstartx="200"
+            dragendx="510"
+            dragstarty="750"
+            dragendy="1261"
+          >
             P
           </text>
-          <text id="s3" class="XRASP draggableLetter" transform="translate(238 1118)">
+          <text
+            id="s3"
+            class="XRASP draggableLetter"
+            transform="translate(238 1118)"
+            dragstartx="200"
+            dragendx="510"
+            dragstarty="750"
+            dragendy="1261"
+          >
             S
           </text>
-          <text id="a3" class="XRASP draggableLetter" transform="translate(238 1075)">
+          <text
+            id="a3"
+            class="XRASP draggableLetter"
+            transform="translate(238 1075)"
+            dragstartx="200"
+            dragendx="510"
+            dragstarty="750"
+            dragendy="1261"
+          >
             A
           </text>
-          <text id="r3" class="XRASP draggableLetter" transform="translate(238 1031)">
+          <text
+            id="r3"
+            class="XRASP draggableLetter"
+            transform="translate(238 1031)"
+            dragstartx="200"
+            dragendx="510"
+            dragstarty="750"
+            dragendy="1261"
+          >
             R
           </text>
-          <text id="x3" class="XRASP draggableLetter" transform="translate(237 988)">
+          <text
+            id="x3"
+            class="XRASP draggableLetter"
+            transform="translate(237 988)"
+            dragstartx="200"
+            dragendx="510"
+            dragstarty="750"
+            dragendy="1261"
+          >
             X
           </text>
         </g>
@@ -847,17 +952,14 @@
           // Lexikoneintrag anzeigen
         }
 
-        dot5.onclick = function () {
-          if (display == "none") {
-            document.getElementById('dot5').style.display = 'unset'
+        uterus.onclick = function () {
+          if (document.getElementById('dot5').style.visibility == 'hidden') {
+            document.getElementById('dot5').style.visibility = 'visible'
           }
-          if (display == "unset") {
-            document.getElementById('dot5').style.display = 'none'
+          if (document.getElementById('dot5').style.visibility == 'visible') {
+            document.getElementById('dot5').style.visibility = 'hidden'
           }
         }
-        // TO DO Checkboxes
-        // TO DO Punkte setzen
-        // TO DO Punkte Drag & Drop
 
         let drag = d3.drag().on('drag', dragmove)
         let dragLetter = d3.drag().on('drag', dragmoveLetter)
@@ -870,7 +972,6 @@
             x < d3.select(this).attr('dragend')
           ) {
             d3.select(this).attr('cx', x)
-            //  cx="941"
           }
         }
 
@@ -885,7 +986,6 @@
             y < d3.select(this).attr('dragendy')
           ) {
             d3.select(this).attr('transform', 'translate(' + x + ' ' + y + ')')
-                                // transform="translate(237 988)"
           }
         }
 

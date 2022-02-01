@@ -1,79 +1,89 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <link rel="stylesheet" href="radar-styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <a href="Home.html"><img   
+  <head>
+    <link rel="stylesheet" href="radar-styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Geschlechter-Radar</title>
+    <a href="Home.html">
+      <img
         src="Logo-01.svg"
-        style="min-width: 5%; max-width: 300px; height: auto;" 
-      /></a>
-      
-    
-</head>
-<body>
+        style="min-width: 5%; max-width: 300px; height: auto;"
+      />
+    </a>
+  </head>
+  <body>
     <ul>
-        <li><a href="Home.html">Radar</a></li>
-        <li><a class="active" href="Lexikon.html">Lexikon</a></li>
-        <li><a href="About.html">About</a></li>
-      </ul>
+      <li><a href="Home.html">Radar</a></li>
+      <li><a class="active" href="Lexikon.html">Lexikon</a></li>
+      <li><a href="About.html">About</a></li>
+    </ul>
 
-
-      <div class="container">
-        <div class="wrapper">
-            <button class="toggle">
-                Ausdruck
-            </button>
-            <div class="content">
-                <p>Als Ausdruck wird hier alles nach außen Wirkende eines Menschen bezeichnet, also das Aussehen, die Kleidung, die Frisur, Körperbehaarung, die Stimme, Körperform, die Art der Kommunikation und Körpersprache. </p>
-    <!--                <img src="2022-01-28 Radar_Overview.png" class="ausdruck-radar"></img> -->
-            </div>
+    <div class="container">
+      <div class="wrapper">
+        <button class="toggle">
+          Ausdruck
+        </button>
+        <div class="content">
+          <p>
+            Als Ausdruck wird hier alles nach außen Wirkende eines Menschen
+            bezeichnet, also das Aussehen, die Kleidung, die Frisur,
+            Körperbehaarung, die Stimme, Körperform, die Art der Kommunikation
+            und Körpersprache.
+          </p>
+          <!--                <img src="2022-01-28 Radar_Overview.png" class="ausdruck-radar"></img> -->
         </div>
-        <div class="wrapper">
-            <button class="toggle" id="anziehung">
-                Anziehung
-            </button>
-            <div class="content">
-                <p>Als Anziehung bezeichnet man das Gefühl eines Menschen, sich zu einem anderen Menschen hingezogen zu fühlen oder den Reiz, der von einem anderen Menschen ausgeht. </p>
-            </div>
+      </div>
+      <div class="wrapper">
+        <button class="toggle" id="anziehung">
+          Anziehung
+        </button>
+        <div class="content">
+          <p>
+            Als Anziehung bezeichnet man das Gefühl eines Menschen, sich zu
+            einem anderen Menschen hingezogen zu fühlen oder den Reiz, der von
+            einem anderen Menschen ausgeht.
+          </p>
         </div>
-        <div class="wrapper">
-            <button class="toggle">
-                Biologisches Geschlecht (engl. sex)
-            </button>
-            <div class="content">
-                <p>Das biologische Geschlecht eines Menschen wird bestimmt anhand von: Chromosomen, Keimdrüsen (Eierstöcke, Hoden), Hormonen, inneren und äußeren Geschlechtsmerkmalen (Vulva und Vagina, Penis).</p>
-            </div>
+      </div>
+      <div class="wrapper">
+        <button class="toggle">
+          Biologisches Geschlecht (engl. sex)
+        </button>
+        <div class="content">
+          <p>
+            Das biologische Geschlecht eines Menschen wird bestimmt anhand von:
+            Chromosomen, Keimdrüsen (Eierstöcke, Hoden), Hormonen, inneren und
+            äußeren Geschlechtsmerkmalen (Vulva und Vagina, Penis).
+          </p>
         </div>
+      </div>
     </div>
 
+    <script type="text/javascript">
+      let toggles = document.getElementsByClassName('toggle')
+      let contentDiv = document.getElementsByClassName('content')
 
-<script type="text/javascript">
+      for (let i = 0; i < toggles.length; i++) {
+        toggles[i].addEventListener('click', () => {
+          if (
+            parseInt(contentDiv[i].style.height) != contentDiv[i].scrollHeight
+          ) {
+            contentDiv[i].style.height = contentDiv[i].scrollHeight + 'px'
+          } else {
+            contentDiv[i].style.height = '0px'
+          }
 
-let toggles = document.getElementsByClassName('toggle');
-let contentDiv = document.getElementsByClassName('content');
-
-for(let i=0; i<toggles.length; i++){
-    toggles[i].addEventListener('click', ()=>{
-        if( parseInt(contentDiv[i].style.height) != contentDiv[i].scrollHeight){
-            contentDiv[i].style.height = contentDiv[i].scrollHeight + "px";
-        }
-        else{
-            contentDiv[i].style.height = "0px"; 
-        }
-
-        for(let j=0; j<contentDiv.length; j++){
-            if(j!==i){
-                contentDiv[j].style.height = "0px";  
+          for (let j = 0; j < contentDiv.length; j++) {
+            if (j !== i) {
+              contentDiv[j].style.height = '0px'
             }
-        }
-    });
-}
+          }
+        })
+      }
+    </script>
 
-</script>
-
-
-
-<!-- ALT
+    <!-- ALT
      <h2 id="Ausdruck">
         Ausdruck
      </h2> <p id="ausdruck">
@@ -112,5 +122,5 @@ document.getElementById("ausdruck").style.visibility = "hidden";
 <p> Das lateinische Präfix "cis-" (auf dieser Seite, diesseits, binnen, innerhalb) bildet das Antonym also Gegenteil von trans- (über-, hinüber-, durch-, hindurch-). "Cis" und Begriffe wie "cisgender", wurden von der trans*-Bewegung eingeführt, um trans* nicht immer als die Abweichung von der Norm zu definieren. </p>
 
 -->
-</body>
+  </body>
 </html>
