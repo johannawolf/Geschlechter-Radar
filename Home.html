@@ -212,6 +212,33 @@
         <line class="cls-3" x1="1871.83" y1="663.32" x2="958.81" y2="959.97" />
         <circle class="cls-4 tooltip" cx="960" cy="959.99" r="378.74"></circle>
       </g>
+      <g id="piepieces" display="none">
+        <path
+          id="pieAnziehung"
+          class="pie"
+          d="M582.62,960a378.18,378.18,0,0,1,18-115.76L474,801.74,47.81,663.26,474,801.74l-426.12-143A959.05,959.05,0,0,0,0,959c0,314.53,151.26,593.72,385,768.82l351.11-463.33C643,1195.49,582.62,1084.8,582.62,960Z"
+        />
+        <path
+          id="pieAusdruck"
+          class="pie"
+          d="M1523.07,1737.88l-341-468.84a378.82,378.82,0,0,1-445.41-1.38L395.39,1737.5,736.7,1267.66c-.53-.38-1.05-.78-1.58-1.17L384,1729.82C544.28,1849.88,743.33,1921,959,1921,1169.79,1921,1364.71,1853.06,1523.07,1737.88Z"
+        />
+        <path
+          id="pieRolle"
+          class="pie"
+          d="M601,844C650.18,692.5,792.24,582.85,960,582.26V0C534.65,0,173.93,276.63,47.89,659.79L474,802.74Z"
+        />
+        <path
+          id="pieKoerper"
+          class="pie"
+          d="M960,1V583.26h.18v0h1.17c168,0,310.48,109.41,360,260.86l153.94-50L1873,663.54C1747.81,279,1386.36,1,960,1Z"
+        />
+        <path
+          id="pieIdentitaet"
+          class="pie"
+          d="M1475.32,794.1l236.46-76.84L1872,665l-160.22,52.26,160-52-160,52L1329,842.12l-7.51,2.46A378.52,378.52,0,0,1,1340.09,962c0,126.35-61.88,238.25-157,307l341,468.84C1764,1563.37,1920,1280.4,1920,961a959.26,959.26,0,0,0-47-297.46Z"
+        />
+      </g>
       <g id="Kreis">
         <text class="cls-5" transform="translate(1022.67 694.97) rotate(17.87)">
           K
@@ -398,7 +425,7 @@
           <title>Hello, World!</title>
         </text>
       </g>
-      <g id="Ring" visibility="visible">
+      <g id="Ring" display="unset">
         <a xlink:href="https://www.chri-h.ch/geschlechter-radar/">
           <text class="cls-9" transform="translate(1202.45 548.18)">endo</text>
         </a>
@@ -1059,41 +1086,6 @@
             X
           </text>
         </g>
-        <g id="pie">
-          <path
-            id="pieAnziehung"
-            class="pie"
-            d="M582.62,960a378.18,378.18,0,0,1,18-115.76L474,801.74,47.81,663.26,474,801.74l-426.12-143A959.05,959.05,0,0,0,0,959c0,314.53,151.26,593.72,385,768.82l351.11-463.33C643,1195.49,582.62,1084.8,582.62,960Z"
-            transform="translate(0 -200)"
-            visibility="hidden"
-          />
-          <path
-            id="pieAusdruck"
-            class="pie"
-            d="M1523.07,1737.88l-341-468.84a378.82,378.82,0,0,1-445.41-1.38L395.39,1737.5,736.7,1267.66c-.53-.38-1.05-.78-1.58-1.17L384,1729.82C544.28,1849.88,743.33,1921,959,1921,1169.79,1921,1364.71,1853.06,1523.07,1737.88Z"
-            transform="translate(0 -200)"
-            visibility="hidden"
-          />
-          <path
-            id="pieRolle"
-            class="pie"
-            d="M601,844C650.18,692.5,792.24,582.85,960,582.26V0C534.65,0,173.93,276.63,47.89,659.79L474,802.74Z"
-            transform="translate(0 -200)"
-            visibility="hidden"
-          />
-          <path
-            class="pieKoerper"
-            d="M960,1V583.26h.18v0h1.17c168,0,310.48,109.41,360,260.86l153.94-50L1873,663.54C1747.81,279,1386.36,1,960,1Z"
-            transform="translate(0 -200)"
-            visibility="hidden"
-          />
-          <path
-            class="pieIdentitaet"
-            d="M1475.32,794.1l236.46-76.84L1872,665l-160.22,52.26,160-52-160,52L1329,842.12l-7.51,2.46A378.52,378.52,0,0,1,1340.09,962c0,126.35-61.88,238.25-157,307l341,468.84C1764,1563.37,1920,1280.4,1920,961a959.26,959.26,0,0,0-47-297.46Z"
-            transform="translate(0 -200)"
-            visibility="hidden"
-          />
-        </g>
       </g>
     </svg>
 
@@ -1105,14 +1097,14 @@
           document.getElementById('p').style.color = 'red'
         }
 
-        /*         Hintergrund.onclick = function () {
-          document.getElementById('Ring', ).style.display = 'none'
-          document.getElementById('Ring2').('pie').style.display = 'unset'
+   piepieces.onclick = function () {
+          document.getElementById('Ring').style.display = 'none'
+          document.getElementById('Ring2').style.display = 'unset'
         }
 
         Hintergrund.onmouseover = function () {
           // TO DO Lexikoneintrag anzeigen
-        } */
+        } 
 
         inter.onclick = function () {
           window.location = 'Lexikon.html'
@@ -1120,7 +1112,7 @@
         }
 
         pieRolle.onclick = function () {
-          window.location = 'Lexikon.html'
+          document.getElementById('pieRolle').innerHTML="hallo"
         }
 
         uterus.onclick = function () {
