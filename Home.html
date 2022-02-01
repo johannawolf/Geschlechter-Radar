@@ -45,22 +45,26 @@
     <video width="100%" src="Platzhalter.mp4" controls></video>
     <p style="text-decoration: underline;">Körper</p>
     <p>: Welche Merkmale hat dein Körper?</p>
-    <br /><br />
+    <br />
+    <br />
     <p style="text-decoration: underline;">Identität</p>
     <p>: Wie sieht das Geschlecht aus, mit dem du dich identifizierst?</p>
-    <br /><br />
+    <br />
+    <br />
     <p style="text-decoration: underline;">Ausdruck</p>
     <p>
       : Wie drückst du dich nach außen aus (z.B. mit Kleidung, Frisur, Art der
       Kommunikation)?
     </p>
-    <br /><br />
+    <br />
+    <br />
     <p style="text-decoration: underline;">Anziehung</p>
     <p>
       : Von welchen Personen fühlst du dich sexuell, romantisch, ästhetisch,
       sinnlich oder platonisch angezogen?
     </p>
-    <br /><br />
+    <br />
+    <br />
     <p style="text-decoration: underline;">Rolle</p>
     <p>
       : Wie sieht die Rolle aus, die du in der Gesellschaft (z.B. in Beruf,
@@ -74,6 +78,9 @@
     >
       <defs>
         <style>
+          .pie {
+            fill: #8cc63f;
+          }
           .cls-1 {
             fill: url(#radial-gradient);
           }
@@ -435,23 +442,23 @@
           <tspan x="72.76" y="0">omie:</tspan>
           <tspan x="0" y="43.2">[ ]</tspan>
           <tspan class="cls-23" x="34.77" y="43.2">V</tspan>
-          <tspan x="56.16" y="43.2">agina</tspan>
+          <tspan id="vagina" x="56.16" y="43.2">agina</tspan>
           <tspan id="uterus" x="0" y="86.4">[ ] Uterus</tspan>
         </text>
         <text class="cls-21" transform="translate(1202 75.8)">
           [ ] Eiers
           <tspan class="cls-22" x="112.25" y="0">t</tspan>
-          <tspan x="123.47" y="0">&ouml;c</tspan>
+          <tspan x="123.47" y="0">öc</tspan>
           <tspan class="cls-22" x="162.18" y="0">k</tspan>
           <tspan x="179.46" y="0">e</tspan>
-          <tspan x="0" y="43.2">[ ] Hoden</tspan>
+          <tspan id="hoden" x="0" y="43.2">[ ] Hoden</tspan>
         </text>
         <text class="cls-21" transform="translate(1224 317.8)">
           Ch
           <tspan class="cls-22" x="43.14" y="0">r</tspan>
           <tspan x="54.9" y="0">omosomen:</tspan>
-          <tspan x="0" y="43.2">[ ] XY</tspan>
-          <tspan x="0" y="86.4">[ ] XX</tspan>
+          <tspan id="xy" x="0" y="43.2">[ ] XY</tspan>
+          <tspan id="xx" x="0" y="86.4">[ ] XX</tspan>
           <tspan x="0" y="129.6">[ ] weite</tspan>
           <tspan class="cls-24" x="118.74" y="129.6">r</tspan>
           <tspan x="130.52" y="129.6">e</tspan>
@@ -482,17 +489,17 @@
           <tspan class="cls-29">P</tspan>
           <tspan x="21.94" y="0">enis</tspan>
         </text>
-        <text class="cls-21" transform="translate(1556 990.8)">
+        <text id="cis" class="cls-21" transform="translate(1556 990.8)">
           [ ] cis
-          <tspan x="0" y="43.2">[ ] nicht cis</tspan>
+          <tspan id="ncis" x="0" y="43.2">[ ] nicht cis</tspan>
           <tspan x="0" y="86.4">[ ] t</tspan>
           <tspan class="cls-25" x="46.34" y="86.4">r</tspan>
           <tspan x="57.74" y="86.4">ans</tspan>
           <tspan x="0" y="129.6">[ ] nicht t</tspan>
           <tspan class="cls-25" x="132.8" y="129.6">r</tspan>
           <tspan x="144.21" y="129.6">ans</tspan>
-          <tspan x="0" y="216">[ ] binär</tspan>
-          <tspan x="0" y="259.2">[ ] nicht binär</tspan>
+          <tspan id="binaer" x="0" y="216">[ ] binär</tspan>
+          <tspan id="nbinaer" x="0" y="259.2">[ ] nicht binär</tspan>
         </text>
         <text class="cls-21" transform="translate(238 987.8)">
           X Sexuell
@@ -707,17 +714,73 @@
             r="13"
             visibility="hidden"
           />
-          <circle id="dot6" class="cls-19" cx="1044" cy="62" r="13" />
+          <circle
+            id="dot6"
+            class="cls-19"
+            cx="1044"
+            cy="62"
+            r="13"
+            visibility="hidden"
+          />
           vagina
-          <circle id="dot7" class="cls-19" cx="1215" cy="107" r="13" />
+          <circle
+            id="dot7"
+            class="cls-19"
+            cx="1215"
+            cy="107"
+            r="13"
+            visibility="hidden"
+          />
           hoden
-          <circle id="dot8" class="cls-19" cx="1215" cy="63" r="13" />
+          <circle
+            id="dot8"
+            class="cls-19"
+            cx="1215"
+            cy="63"
+            r="13"
+            visibility="hidden"
+          />
           euerstücke
-          <circle id="dot9" class="cls-19" cx="1237" cy="435" r="13" />
-          <circle id="dot10" class="cls-19" cx="1237" cy="391" r="13" />
-          <circle id="dot11" class="cls-19" cx="1237" cy="349" r="13" />
-          <circle id="dot12" class="cls-19" cx="1536" cy="349" r="13" />
-          <circle id="dot13" class="cls-19" cx="1536" cy="392" r="13" />
+          <circle
+            id="dot9"
+            class="cls-19"
+            cx="1237"
+            cy="435"
+            r="13"
+            visibility="hidden"
+          />
+          <circle
+            id="dot10"
+            class="cls-19"
+            cx="1237"
+            cy="391"
+            r="13"
+            visibility="hidden"
+          />
+          <circle
+            id="dot11"
+            class="cls-19"
+            cx="1237"
+            cy="349"
+            r="13"
+            visibility="hidden"
+          />
+          <circle
+            id="dot12"
+            class="cls-19"
+            cx="1536"
+            cy="349"
+            r="13"
+            visibility="hidden"
+          />
+          <circle
+            id="dot13"
+            class="cls-19"
+            cx="1536"
+            cy="392"
+            r="13"
+            visibility="hidden"
+          />
           <circle
             id="dot14"
             class="cls-19 draggable"
@@ -748,14 +811,56 @@
             dragend="1826"
           />
           weit
-          <circle id="dot17" class="cls-19" cx="1569" cy="978" r="13" />
-          <circle id="dot18" class="cls-19" cx="1569" cy="1020" r="13" />
-          <circle id="dot19" class="cls-19" cx="1569" cy="1065" r="13" />
-          <circle id="dot20" class="cls-19" cx="1569" cy="1108" r="13" />
-          <circle id="dot21" class="cls-19" cx="1569" cy="1194" r="13" />
-          <circle id="dot21" class="cls-19" cx="1569" cy="1238" r="13" />
+          <circle
+            id="dot17"
+            class="cls-19"
+            cx="1569"
+            cy="978"
+            r="13"
+            visibility="hidden"
+          />
+          <circle
+            id="dot18"
+            class="cls-19"
+            cx="1569"
+            cy="1020"
+            r="13"
+            visibility="hidden"
+          />
+          <circle
+            id="dot19"
+            class="cls-19"
+            cx="1569"
+            cy="1065"
+            r="13"
+            visibility="hidden"
+          />
+          <circle
+            id="dot20"
+            class="cls-19"
+            cx="1569"
+            cy="1108"
+            r="13"
+            visibility="hidden"
+          />
+          <circle
+            id="dot21"
+            class="cls-19"
+            cx="1569"
+            cy="1194"
+            r="13"
+            visibility="hidden"
+          />
           <circle
             id="dot22"
+            class="cls-19"
+            cx="1569"
+            cy="1238"
+            r="13"
+            visibility="hidden"
+          />
+          <circle
+            id="dot23"
             class="cls-19 draggable"
             cx="941"
             cy="1368"
@@ -765,7 +870,7 @@
           />
           w
           <circle
-            id="dot23"
+            id="dot24"
             class="cls-19 draggable"
             cx="941"
             cy="1435"
@@ -775,7 +880,7 @@
           />
           m
           <circle
-            id="dot24"
+            id="dot25"
             class="cls-19 draggable"
             cx="941"
             cy="1504"
@@ -954,6 +1059,41 @@
             X
           </text>
         </g>
+        <g id="pie">
+          <path
+            id="pieAnziehung"
+            class="pie"
+            d="M582.62,960a378.18,378.18,0,0,1,18-115.76L474,801.74,47.81,663.26,474,801.74l-426.12-143A959.05,959.05,0,0,0,0,959c0,314.53,151.26,593.72,385,768.82l351.11-463.33C643,1195.49,582.62,1084.8,582.62,960Z"
+            transform="translate(0 -200)"
+            visibility="hidden"
+          />
+          <path
+            id="pieAusdruck"
+            class="pie"
+            d="M1523.07,1737.88l-341-468.84a378.82,378.82,0,0,1-445.41-1.38L395.39,1737.5,736.7,1267.66c-.53-.38-1.05-.78-1.58-1.17L384,1729.82C544.28,1849.88,743.33,1921,959,1921,1169.79,1921,1364.71,1853.06,1523.07,1737.88Z"
+            transform="translate(0 -200)"
+            visibility="hidden"
+          />
+          <path
+            id="pieRolle"
+            class="pie"
+            d="M601,844C650.18,692.5,792.24,582.85,960,582.26V0C534.65,0,173.93,276.63,47.89,659.79L474,802.74Z"
+            transform="translate(0 -200)"
+            visibility="hidden"
+          />
+          <path
+            class="pieKoerper"
+            d="M960,1V583.26h.18v0h1.17c168,0,310.48,109.41,360,260.86l153.94-50L1873,663.54C1747.81,279,1386.36,1,960,1Z"
+            transform="translate(0 -200)"
+            visibility="hidden"
+          />
+          <path
+            class="pieIdentitaet"
+            d="M1475.32,794.1l236.46-76.84L1872,665l-160.22,52.26,160-52-160,52L1329,842.12l-7.51,2.46A378.52,378.52,0,0,1,1340.09,962c0,126.35-61.88,238.25-157,307l341,468.84C1764,1563.37,1920,1280.4,1920,961a959.26,959.26,0,0,0-47-297.46Z"
+            transform="translate(0 -200)"
+            visibility="hidden"
+          />
+        </g>
       </g>
     </svg>
 
@@ -965,28 +1105,151 @@
           document.getElementById('p').style.color = 'red'
         }
 
-        Hintergrund.onclick = function () {
+        /*         Hintergrund.onclick = function () {
           document.getElementById('Ring').style.display = 'none'
           document.getElementById('Ring2').style.display = 'unset'
         }
 
         Hintergrund.onmouseover = function () {
           // TO DO Lexikoneintrag anzeigen
-        }
+        } */
 
         inter.onclick = function () {
           window.location = 'Lexikon.html'
           // Lexikoneintrag anzeigen
         }
 
+        pieRolle.onclick = function () {
+          window.location = 'Lexikon.html'
+        }
+
         uterus.onclick = function () {
-          if (document.getElementById('dot5').style.visibility == 'hidden') {
+          var x = document.getElementById('dot5')
+          if (x.style.visibility === 'hidden') {
+            x.style.visibility = 'visible'
+          } else {
+            x.style.visibility = 'hidden'
+          }
+        }
+        vagina.onclick = function () {
+          var x = document.getElementById('dot6')
+          if (x.style.visibility === 'hidden') {
+            x.style.visibility = 'visible'
+          } else {
+            x.style.visibility = 'hidden'
+          }
+        }
+        hoden.onclick = function () {
+          var x = document.getElementById('dot7')
+          if (x.style.visibility === 'hidden') {
+            x.style.visibility = 'visible'
+          } else {
+            x.style.visibility = 'hidden'
+          }
+        }
+        eierstoecke.onclick = function () {
+          var x = document.getElementById('dot8')
+          if (x.style.visibility === 'hidden') {
+            x.style.visibility = 'visible'
+          } else {
+            x.style.visibility = 'hidden'
+          }
+        }
+        weitere.onclick = function () {
+          var x = document.getElementById('dot9')
+          if (x.style.visibility === 'hidden') {
+            x.style.visibility = 'visible'
+          } else {
+            x.style.visibility = 'hidden'
+          }
+        }
+        xx.onclick = function () {
+          var x = document.getElementById('dot10')
+          if (x.style.visibility === 'hidden') {
+            x.style.visibility = 'visible'
+          } else {
+            x.style.visibility = 'hidden'
+          }
+        }
+        xy.onclick = function () {
+          var x = document.getElementById('dot11')
+          if (x.style.visibility === 'hidden') {
+            x.style.visibility = 'visible'
+          } else {
+            x.style.visibility = 'hidden'
+          }
+        }
+        oestrogen.onclick = function () {
+          var x = document.getElementById('dot12')
+          if (x.style.visibility === 'hidden') {
+            x.style.visibility = 'visible'
+          } else {
+            x.style.visibility = 'hidden'
+          }
+        }
+        Testosteron.onclick = function () {
+          var x = document.getElementById('dot13')
+          if (x.style.visibility === 'hidden') {
+            x.style.visibility = 'visible'
+          } else {
+            x.style.visibility = 'hidden'
+          }
+        }
+        cis.onclick = function () {
+          var x = document.getElementById('dot17')
+          if (x.style.visibility === 'hidden') {
+            x.style.visibility = 'visible'
+          } else {
+            x.style.visibility = 'hidden'
+          }
+        }
+        ncis.onclick = function () {
+          var x = document.getElementById('dot18')
+          if (x.style.visibility === 'hidden') {
+            x.style.visibility = 'visible'
+          } else {
+            x.style.visibility = 'hidden'
+          }
+        }
+        trans.onclick = function () {
+          var x = document.getElementById('dot19')
+          if (x.style.visibility === 'hidden') {
+            x.style.visibility = 'visible'
+          } else {
+            x.style.visibility = 'hidden'
+          }
+        }
+        ntrans.onclick = function () {
+          var x = document.getElementById('dot20')
+          if (x.style.visibility === 'hidden') {
+            x.style.visibility = 'visible'
+          } else {
+            x.style.visibility = 'hidden'
+          }
+        }
+        binaer.onclick = function () {
+          var x = document.getElementById('dot21')
+          if (x.style.visibility === 'hidden') {
+            x.style.visibility = 'visible'
+          } else {
+            x.style.visibility = 'hidden'
+          }
+        }
+        nbinaer.onclick = function () {
+          var x = document.getElementById('dot22')
+          if (x.style.visibility === 'hidden') {
+            x.style.visibility = 'visible'
+          } else {
+            x.style.visibility = 'hidden'
+          }
+        }
+
+        /* if (document.getElementById('dot5').style.visibility == 'hidden') {
             document.getElementById('dot5').style.visibility = 'visible'
           }
           if (document.getElementById('dot5').style.visibility == 'visible') {
             document.getElementById('dot5').style.visibility = 'hidden'
-          }
-        }
+          } */
 
         let drag = d3.drag().on('drag', dragmove)
         let dragLetter = d3.drag().on('drag', dragmoveLetter)
