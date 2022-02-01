@@ -212,7 +212,7 @@
         <line class="cls-3" x1="1871.83" y1="663.32" x2="958.81" y2="959.97" />
         <circle class="cls-4 tooltip" cx="960" cy="959.99" r="378.74"></circle>
       </g>
-      <g id="piepieces" display="none">
+      <!--       <g id="piepieces" display="none">
         <path
           id="pieAnziehung"
           class="pie"
@@ -238,7 +238,7 @@
           class="pie"
           d="M1475.32,794.1l236.46-76.84L1872,665l-160.22,52.26,160-52-160,52L1329,842.12l-7.51,2.46A378.52,378.52,0,0,1,1340.09,962c0,126.35-61.88,238.25-157,307l341,468.84C1764,1563.37,1920,1280.4,1920,961a959.26,959.26,0,0,0-47-297.46Z"
         />
-      </g>
+      </g> -->
       <g id="Kreis">
         <text class="cls-5" transform="translate(1022.67 694.97) rotate(17.87)">
           K
@@ -467,17 +467,17 @@
           Ana
           <tspan class="cls-22" x="61.54" y="0">t</tspan>
           <tspan x="72.76" y="0">omie:</tspan>
-          <tspan x="0" y="43.2">[ ]</tspan>
-          <tspan class="cls-23" x="34.77" y="43.2">V</tspan>
-          <tspan id="vagina" x="56.16" y="43.2">agina</tspan>
+          <tspan id="vagina1" x="0" y="43.2">[ ]</tspan>
+          <tspan id="vagina2" class="cls-23" x="34.77" y="43.2">V</tspan>
+          <tspan id="vagina3" x="56.16" y="43.2">agina</tspan>
           <tspan id="uterus" x="0" y="86.4">[ ] Uterus</tspan>
         </text>
-        <text class="cls-21" transform="translate(1202 75.8)">
+        <text id="eierstoecke1" class="cls-21" transform="translate(1202 75.8)">
           [ ] Eiers
-          <tspan class="cls-22" x="112.25" y="0">t</tspan>
-          <tspan x="123.47" y="0">öc</tspan>
-          <tspan class="cls-22" x="162.18" y="0">k</tspan>
-          <tspan x="179.46" y="0">e</tspan>
+          <tspan id="eierstoecke1" class="cls-22" x="112.25" y="0">t</tspan>
+          <tspan id="eierstoecke2" x="123.47" y="0">öc</tspan>
+          <tspan id="eierstoecke3" class="cls-22" x="162.18" y="0">k</tspan>
+          <tspan id="eierstoecke4" x="179.46" y="0">e</tspan>
           <tspan id="hoden" x="0" y="43.2">[ ] Hoden</tspan>
         </text>
         <text class="cls-21" transform="translate(1224 317.8)">
@@ -1097,23 +1097,23 @@
           document.getElementById('p').style.color = 'red'
         }
 
-   piepieces.onclick = function () {
+        Hintergrund.onclick = function () {
           document.getElementById('Ring').style.display = 'none'
           document.getElementById('Ring2').style.display = 'unset'
         }
 
         Hintergrund.onmouseover = function () {
           // TO DO Lexikoneintrag anzeigen
-        } 
+        }
 
         inter.onclick = function () {
           window.location = 'Lexikon.html'
-          // Lexikoneintrag anzeigen
+          // Lexikoneintrag anzeigenå
         }
 
-        pieRolle.onclick = function () {
-          document.getElementById('pieRolle').innerHTML="hallo"
-        }
+/*         pieRolle.onclick = function () {
+          document.getElementById('pieRolle').innerHTML = 'hallo'
+        } */
 
         uterus.onclick = function () {
           var x = document.getElementById('dot5')
@@ -1123,7 +1123,23 @@
             x.style.visibility = 'hidden'
           }
         }
-        vagina.onclick = function () {
+        vagina1.onclick = function () {
+          var x = document.getElementById('dot6')
+          if (x.style.visibility === 'hidden') {
+            x.style.visibility = 'visible'
+          } else {
+            x.style.visibility = 'hidden'
+          }
+        }
+        vagina2.onclick = function () {
+          var x = document.getElementById('dot6')
+          if (x.style.visibility === 'hidden') {
+            x.style.visibility = 'visible'
+          } else {
+            x.style.visibility = 'hidden'
+          }
+        }
+        vagina3.onclick = function () {
           var x = document.getElementById('dot6')
           if (x.style.visibility === 'hidden') {
             x.style.visibility = 'visible'
@@ -1139,7 +1155,31 @@
             x.style.visibility = 'hidden'
           }
         }
-        eierstoecke.onclick = function () {
+        eierstoecke1.onclick = function () {
+          var x = document.getElementById('dot8')
+          if (x.style.visibility === 'hidden') {
+            x.style.visibility = 'visible'
+          } else {
+            x.style.visibility = 'hidden'
+          }
+        }
+        eierstoecke2.onclick = function () {
+          var x = document.getElementById('dot8')
+          if (x.style.visibility === 'hidden') {
+            x.style.visibility = 'visible'
+          } else {
+            x.style.visibility = 'hidden'
+          }
+        }
+        eierstoecke3.onclick = function () {
+          var x = document.getElementById('dot8')
+          if (x.style.visibility === 'hidden') {
+            x.style.visibility = 'visible'
+          } else {
+            x.style.visibility = 'hidden'
+          }
+        }
+        eierstoecke4.onclick = function () {
           var x = document.getElementById('dot8')
           if (x.style.visibility === 'hidden') {
             x.style.visibility = 'visible'
