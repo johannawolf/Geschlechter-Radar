@@ -47,7 +47,7 @@ p {
   font-family: Roboto;
   font-weight: 400;
   font-size: 18px;
-  display: inline
+  display: inline;
 }
 
 a {
@@ -55,7 +55,7 @@ a {
   font-family: Roboto;
   font-weight: 400;
   font-size: 18px;
-  display: inline
+  display: inline;
 }
 
 svg {
@@ -69,7 +69,8 @@ svg {
   padding-top: 90px;
 }
 
-.draggableLetter, .draggable {
+.draggableLetter,
+.draggable {
   cursor: pointer;
 }
 
@@ -150,12 +151,21 @@ li a:hover:not(.active) {
 }
 
 .container {
-  width: 45%;
-  min-width: 500px;
+  width: 80%;
+  min-width: 5%;
   position: absolute;
   transform: translate(-50%, -50%);
   top: 80%;
-  left: 30%;
+  left: 43%;
+}
+
+.containerBild {
+  width: 50%;
+  min-width: 5%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 80%;
+  left: 80%;
 }
 .wrapper {
   background-color: transparent;
@@ -175,7 +185,7 @@ li a:hover:not(.active) {
   align-items: center;
   justify-content: space-between;
   font-size: 22px;
-  font-weight: 500;
+  font-weight: 700;
   border: none;
   outline: none;
   cursor: pointer;
@@ -191,11 +201,10 @@ li a:hover:not(.active) {
   transition: all 1s;
 }
 
-/*.ausdruck-radar {
+.ausdruck-radar {
   margin-left: 200px;
   width: 50%;
-} */
-
+}
 
 .tooltip {
   position: relative;
