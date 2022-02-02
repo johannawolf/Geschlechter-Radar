@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 /*
 Thin            100     
 Extra Light     200
@@ -74,37 +74,6 @@ svg {
   cursor: pointer;
 }
 
-/* cls-Übersicht:
-
-1   Hintergrund, ohne Rahmen
-2   Rahmen des Hintergrundes
-3   Pizza Grenzen??
-4   Innere Kreis
-5   alle einzelnen Buchstaben der Pizzabeschriftungen
-6   GESCHLECHT
-7   H in GESCHLECHT
-8   T in GESCHLECHT
-9   alle einzelnen Worte aus dem Ring
-10  r in traditionell
-11  erstes r in progressiv
-12  zweites r in progressiv
-
-.cls-1:hover {
-  fill: lightblue;
-}
-.cls-12:hover {
-  fill: #ec008c;
-}
-/*GESCHLECHT
-.cls-6:hover {
-  fill: lightgreen;
-}
-/* Worte Ring 
-.cls-9:hover {
-  fill: yellow;
-}
-*/
-
 img {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -115,6 +84,7 @@ ul {
   padding: 0;
   overflow: hidden;
   font-family: Roboto;
+  margin-bottom: 30px;
 }
 li {
   float: left;
@@ -133,6 +103,12 @@ li a:hover:not(.active) {
 .active {
   font-size: 22px;
   font-weight: 700;
+}
+
+video {
+  width:"100%";
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 #ausdruck {
@@ -176,7 +152,7 @@ li a:hover:not(.active) {
 }
 .toggle,
 .content {
-  font-family: "Roboto";
+  font-family: 'Roboto';
 }
 .toggle {
   width: 100%;
