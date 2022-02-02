@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 /*
 Thin            100     
 Extra Light     200
@@ -106,7 +106,7 @@ li a:hover:not(.active) {
 }
 
 video {
-  width:"100%";
+  width: "100%";
   margin-bottom: 30px;
   margin-top: 30px;
 }
@@ -127,12 +127,14 @@ video {
 }
 
 .container {
-  width: 100%;
+  /* width: 100%; */
+  width: 85%;
   min-width: 5%;
   position: absolute;
   transform: translate(-50%, -50%);
   top: 90%;
-  left: 53%;
+  /*left: 53%;*/
+  left: 46%;
 }
 
 .containerBild {
@@ -152,7 +154,7 @@ video {
 }
 .toggle,
 .content {
-  font-family: 'Roboto';
+  font-family: "Roboto";
 }
 .toggle {
   width: 100%;
@@ -207,7 +209,11 @@ video {
   visibility: visible;
 }
 
-.rechts {
+/* 
+
+BILD RECHTS
+
+  .rechts {
   float: right;
   margin-right: 25px;
   margin-left: 25px;
@@ -220,3 +226,4 @@ video {
   align-items: center;
   justify-content: center;
 }
+*/
