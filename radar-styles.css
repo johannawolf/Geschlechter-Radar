@@ -151,12 +151,12 @@ li a:hover:not(.active) {
 }
 
 .container {
-  width: 80%;
+  width: 100%;
   min-width: 5%;
   position: absolute;
   transform: translate(-50%, -50%);
-  top: 80%;
-  left: 43%;
+  top: 90%;
+  left: 53%;
 }
 
 .containerBild {
@@ -204,6 +204,7 @@ li a:hover:not(.active) {
 .ausdruck-radar {
   margin-left: 200px;
   width: 50%;
+  position: right;
 }
 
 .tooltip {
@@ -228,4 +229,18 @@ li a:hover:not(.active) {
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
+}
+
+.rechts {
+  float: right;
+  margin-right: 25px;
+  margin-left: 25px;
+  max-width: 300px;
+  height: auto;
+}
+
+.container2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
