@@ -1243,11 +1243,14 @@
     <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
 
     <script language="javascript" type="text/javascript">
+      
+      //JS TEST
       document.addEventListener('DOMContentLoaded', function () {
         p.onclick = function () {
           document.getElementById('p').style.color = 'red'
         }
 
+        //Einzelne Stücke Overview -> Detailansicht
         pieRolle.onclick = function () {
           document.getElementById('rolle1').style.display = 'none'
           document.getElementById('rolle2').style.display = 'unset'
@@ -1269,11 +1272,13 @@
           document.getElementById('anziehung2').style.display = 'unset'
         }
 
+        //Einzelne Worte anklickbar
         inter.onclick = function () {
           window.location = 'Lexikon.html'
           // Lexikoneintrag anzeigenå
         }
 
+        // Checkboxes
         uterus.onclick = function () {
           var x = document.getElementById('dot5')
           if (x.style.visibility === 'hidden') {
@@ -1397,13 +1402,7 @@
           }
         }
 
-        /* if (document.getElementById('dot5').style.visibility == 'hidden') {
-            document.getElementById('dot5').style.visibility = 'visible'
-          }
-          if (document.getElementById('dot5').style.visibility == 'visible') {
-            document.getElementById('dot5').style.visibility = 'hidden'
-          } */
-
+        // Drag&Drop der Skalen und XRASP
         let drag = d3.drag().on('drag', dragmove)
         let dragLetter = d3.drag().on('drag', dragmoveLetter)
 
@@ -1438,33 +1437,3 @@
     </script>
   </body>
 </html>
-
-<!--        
-    
-1 weitere
-2 m
-3 w
-4 p-k
-14 w
-15 m
-16 weitere
-22 w
-23 m
-24 weitere
- 
-      
-      cls-Übersicht:
-
-1   Hintergrund, ohne Rahmen
-2   Rahmen des Hintergrundes
-3   Pizza Grenzen??
-4   Innere Kreis
-5   alle einzelnen Buchstaben der Pizzabeschriftungen
-6   GESCHLECHT
--7   H in GESCHLECHT 
--8   T in GESCHLECHT 
-9   alle (einzelnen) Worte aus dem Ring
--10  r in traditionell 
--11  erstes r in progressiv
--12  zweites r in progressiv
--->
