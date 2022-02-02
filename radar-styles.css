@@ -70,7 +70,8 @@ svg {
 }
 
 .draggableLetter,
-.draggable {
+.draggable, 
+.pointable {
   cursor: pointer;
 }
 
