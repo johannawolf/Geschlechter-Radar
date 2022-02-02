@@ -227,3 +227,108 @@ BILD RECHTS
   justify-content: center;
 }
 */
+
+
+.pie {
+  fill: #8cc63f;
+}
+.cls-1 {
+  fill: url(#radial-gradient);
+}
+.cls-2,
+.cls-3 {
+  fill: #aeacac;
+}
+.cls-3 {
+  stroke: #aeacac;
+  stroke-miterlimit: 10;
+  stroke-width: 4px;
+}
+.cls-4 {
+  fill: #b3b3b3;
+}
+.cls-5 {
+  font-size: 70px;
+  font-family: Roboto-Regular, Roboto;
+}
+.cls-5,
+.cls-6 {
+  fill: #fff;
+}
+.cls-6 {
+  font-size: 80px;
+  font-family: Roboto-Bold, Roboto;
+  font-weight: 700;
+}
+.cls-7 {
+  letter-spacing: -0.01em;
+}
+.cls-8 {
+  letter-spacing: -0.03em;
+}
+.cls-9 {
+  font-size: 68px;
+  fill: gray;
+  font-family: Roboto-Light, Roboto;
+  font-weight: 300;
+}
+.cls-10 {
+  letter-spacing: -0.02em;
+}
+.cls-11 {
+  letter-spacing: -0.01em;
+}
+.cls-12 {
+  letter-spacing: -0.01em;
+}
+
+.cls-21 {
+  font-size: 36px;
+  font-family: Roboto-Light, Roboto;
+  font-weight: 300;
+}
+.cls-21,
+.cls-27 {
+  fill: gray;
+}
+.cls-22 {
+  letter-spacing: -0.01em;
+}
+.cls-23 {
+  letter-spacing: -0.02em;
+}
+.cls-24 {
+  letter-spacing: -0.01em;
+}
+.cls-25 {
+  letter-spacing: -0.02em;
+}
+.cls-26 {
+  letter-spacing: -0.05em;
+}
+.cls-27,
+.cls-28 {
+  stroke: gray;
+  stroke-miterlimit: 10;
+  stroke-width: 2px;
+}
+.cls-28 {
+  fill: none;
+}
+.cls-29 {
+  letter-spacing: -0.01em;
+}
+.cls-30 {
+  letter-spacing: -0.01em;
+}
+
+.cls-19 {
+  fill: gray;
+}
+
+.XRASP {
+  font-size: 37px;
+  font-family: Roboto-Bold, Roboto;
+  font-weight: 300;
+  fill: gray;
+}
