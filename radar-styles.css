@@ -118,6 +118,8 @@ video {
   text-align: right;
 }
 
+/* LEXIKON */
+
 *,
 *:before,
 *:after {
@@ -128,28 +130,19 @@ video {
 
 .container {
   /* width: 100%; */
-  width: 85%;
+  width: 90%;
   min-width: 5%;
   position: absolute;
   transform: translate(-50%, -50%);
-  top: 90%;
+  top: 99%;
   /*left: 53%;*/
-  left: 46%;
+  left: 49%;
 }
 
-.containerBild {
-  width: 50%;
-  min-width: 5%;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 80%;
-  left: 80%;
-}
 .wrapper {
   background-color: transparent;
-  margin-bottom: 20px;
-  padding: 15px 40px;
-  border-radius: 5px;
+  margin-bottom: 0px;
+  padding: 15px 40px; /*15 40*/
   box-shadow: none;
 }
 .toggle,
@@ -172,18 +165,21 @@ video {
 .content {
   position: relative;
   font-size: 14px;
-  text-align: justify;
+  text-align: left;
   line-height: 30px;
   height: 0;
   overflow: hidden;
   transition: all 1s;
+  z-index: 1;
 }
 
-.ausdruck-radar {
-  margin-left: 200px;
-  width: 50%;
-  position: right;
+.containerBild {
+  display: flex;
+  align-items: center;
+  justify-content: left;
 }
+
+/*LEXIKON ENDE*/
 
 .tooltip {
   position: relative;
@@ -208,26 +204,6 @@ video {
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
-
-/* 
-
-BILD RECHTS
-
-  .rechts {
-  float: right;
-  margin-right: 25px;
-  margin-left: 25px;
-  max-width: 300px;
-  height: auto;
-}
-
-.container2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-*/
-
 
 .pie {
   fill: #8cc63f;
