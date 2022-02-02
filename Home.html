@@ -434,40 +434,51 @@
         </text>
       </g>
       <g id="Ring" display="unset">
-        <a xlink:href="https://www.chri-h.ch/geschlechter-radar/">
+        <g id="koerper1" display="unset">
           <text class="cls-9" transform="translate(1202.45 548.18)">endo</text>
-        </a>
-        <text id="inter" class="cls-9" transform="translate(1365.2 330.8)">
-          inter
-        </text>
-        <text class="cls-9" transform="translate(1646.69 1222.83)">
-          t
-          <tspan class="cls-9" x="21.85" y="0">r</tspan>
-          <tspan x="43.4" y="0">ans</tspan>
-        </text>
-        <text class="cls-9" transform="translate(1404.69 1134.83)">cis</text>
-        <text class="cls-9" transform="translate(842.69 1462.83)">konform</text>
-        <text class="cls-9" transform="translate(793.69 1780.83)">
-          nonkonform
-        </text>
-        <text class="cls-9" transform="translate(356.18 1138.83)">
-          hete
-          <tspan class="cls-9" x="129.43" y="0">r</tspan>
-          <tspan x="151.64" y="0">o</tspan>
-        </text>
-        <text class="cls-9" transform="translate(122.18 1228.97)">queer</text>
-        <text class="cls-9" transform="translate(485.18 548.83)">
-          t
-          <tspan class="cls-9" x="21.85" y="0">r</tspan>
-          <tspan x="43.4" y="0">aditionell</tspan>
-        </text>
-        <text class="cls-9" transform="translate(347.69 331.83)">
-          p
-          <tspan class="cls-9" x="37.69" y="0">r</tspan>
-          <tspan x="59.9" y="0">og</tspan>
-          <tspan class="cls-9" x="135.7" y="0">r</tspan>
-          <tspan x="157.95" y="0">essiv</tspan>
-        </text>
+
+          <text id="inter" class="cls-9" transform="translate(1365.2 330.8)">
+            inter
+          </text>
+        </g>
+        <g id="identitaet1" display="unset">
+          <text class="cls-9" transform="translate(1646.69 1222.83)">
+            t
+            <tspan class="cls-9" x="21.85" y="0">r</tspan>
+            <tspan x="43.4" y="0">ans</tspan>
+          </text>
+          <text class="cls-9" transform="translate(1404.69 1134.83)">cis</text>
+        </g>
+        <g id="ausdruck1" display="unset">
+          <text class="cls-9" transform="translate(842.69 1462.83)">
+            konform
+          </text>
+          <text class="cls-9" transform="translate(793.69 1780.83)">
+            nonkonform
+          </text>
+        </g>
+        <g id="anziehung1" display="unset">
+          <text class="cls-9" transform="translate(356.18 1138.83)">
+            hete
+            <tspan class="cls-9" x="129.43" y="0">r</tspan>
+            <tspan x="151.64" y="0">o</tspan>
+          </text>
+          <text class="cls-9" transform="translate(122.18 1228.97)">queer</text>
+        </g>
+        <g id="rolle1" display="unset">
+          <text class="cls-9" transform="translate(485.18 548.83)">
+            t
+            <tspan class="cls-9" x="21.85" y="0">r</tspan>
+            <tspan x="43.4" y="0">aditionell</tspan>
+          </text>
+          <text class="cls-9" transform="translate(347.69 331.83)">
+            p
+            <tspan class="cls-9" x="37.69" y="0">r</tspan>
+            <tspan x="59.9" y="0">og</tspan>
+            <tspan class="cls-9" x="135.7" y="0">r</tspan>
+            <tspan x="157.95" y="0">essiv</tspan>
+          </text>
+        </g>
       </g>
 
       <g id="Ring2" transform="translate(0 180)">
@@ -676,12 +687,12 @@
             y2="775.08"
           />
           <line
-          class="cls-28"
-          x1="1832.38"
-          y1="881.74"
-          x2="1846.47"
-          y2="897.31"
-        />
+            class="cls-28"
+            x1="1832.38"
+            y1="881.74"
+            x2="1846.47"
+            y2="897.31"
+          />
         </g>
         <g id="anziehung2" display="none">
           <text class="cls-21" transform="translate(238 987.8)">
@@ -730,7 +741,13 @@
             y2="830.31"
           />
           <line class="cls-27" x1="525" y1="896.8" x2="239" y2="896.8" />
-          <line class="cls-28" x1="511.38" y1="881.74" x2="525.47" y2="897.31" />
+          <line
+            class="cls-28"
+            x1="511.38"
+            y1="881.74"
+            x2="525.47"
+            y2="897.31"
+          />
           <line class="cls-28" x1="240" y1="886.8" x2="240" y2="907.8" />
           <line
             class="cls-28"
@@ -1221,56 +1238,41 @@
           />
         </g>
       </g>
-
-                <!--      LOST
-                          <line
-            class="cls-28"
-            x1="1832.38"
-            y1="881.74"
-            x2="1846.47"
-            y2="897.31"
-          />
- -->
     </svg>
 
     <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
 
     <script language="javascript" type="text/javascript">
+      
+      //JS TEST
       document.addEventListener('DOMContentLoaded', function () {
         p.onclick = function () {
           document.getElementById('p').style.color = 'red'
         }
 
-        /*         pieAusdruck.onclick = function () {
-          document.getElementById('Ring').style.display = 'none'
-          document.getElementById('Ring2').style.display = 'unset'
-        }
-
-        pieAusdruck.onmouseover = function () {
-          document.getElementById('pieAusdruck').style.opacity = '0.4'
-        } */
-
+        //Einzelne Stücke Overview -> Detailansicht
         pieRolle.onclick = function () {
-          document.getElementById('Ring').style.display = 'none'
+          document.getElementById('rolle1').style.display = 'none'
           document.getElementById('rolle2').style.display = 'unset'
         }
         pieKoerper.onclick = function () {
-          document.getElementById('Ring').style.display = 'none'
+          document.getElementById('koerper1').style.display = 'none'
           document.getElementById('koerper2').style.display = 'unset'
         }
         pieIdentitaet.onclick = function () {
-          document.getElementById('Ring').style.display = 'none'
+          document.getElementById('identitaet1').style.display = 'none'
           document.getElementById('identitaet2').style.display = 'unset'
         }
         pieAusdruck.onclick = function () {
-          document.getElementById('Ring').style.display = 'none'
+          document.getElementById('ausdruck1').style.display = 'none'
           document.getElementById('ausdruck2').style.display = 'unset'
         }
         pieAnziehung.onclick = function () {
-          document.getElementById('Ring').style.display = 'none'
+          document.getElementById('anziehung1').style.display = 'none'
           document.getElementById('anziehung2').style.display = 'unset'
         }
 
+        //Einzelne Worte anklickbar
         inter.onclick = function () {
           window.location = 'Lexikon.html#hier';
           document.getElementById("anziehung").click();
@@ -1279,6 +1281,7 @@
         
         
 
+        // Checkboxes
         uterus.onclick = function () {
           var x = document.getElementById('dot5')
           if (x.style.visibility === 'hidden') {
@@ -1402,13 +1405,7 @@
           }
         }
 
-        /* if (document.getElementById('dot5').style.visibility == 'hidden') {
-            document.getElementById('dot5').style.visibility = 'visible'
-          }
-          if (document.getElementById('dot5').style.visibility == 'visible') {
-            document.getElementById('dot5').style.visibility = 'hidden'
-          } */
-
+        // Drag&Drop der Skalen und XRASP
         let drag = d3.drag().on('drag', dragmove)
         let dragLetter = d3.drag().on('drag', dragmoveLetter)
 
@@ -1443,33 +1440,3 @@
     </script>
   </body>
 </html>
-
-<!--        
-    
-1 weitere
-2 m
-3 w
-4 p-k
-14 w
-15 m
-16 weitere
-22 w
-23 m
-24 weitere
- 
-      
-      cls-Übersicht:
-
-1   Hintergrund, ohne Rahmen
-2   Rahmen des Hintergrundes
-3   Pizza Grenzen??
-4   Innere Kreis
-5   alle einzelnen Buchstaben der Pizzabeschriftungen
-6   GESCHLECHT
--7   H in GESCHLECHT 
--8   T in GESCHLECHT 
-9   alle (einzelnen) Worte aus dem Ring
--10  r in traditionell 
--11  erstes r in progressiv
--12  zweites r in progressiv
--->
