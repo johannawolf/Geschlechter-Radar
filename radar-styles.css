@@ -70,7 +70,8 @@ svg {
 }
 
 .draggableLetter,
-.draggable {
+.draggable, 
+.pointable {
   cursor: pointer;
 }
 
@@ -106,7 +107,7 @@ li a:hover:not(.active) {
 }
 
 video {
-  width: "100%";
+  width: 600px;
   margin-bottom: 30px;
   margin-top: 30px;
 }
