@@ -111,6 +111,7 @@
         />
       </g>
       <g id="Kreis">
+        <g id="koerper" class="pointable">
         <text class="cls-5" transform="translate(1022.67 694.97) rotate(17.87)">
           K
         </text>
@@ -138,10 +139,13 @@
         >
           r
         </text>
+      </g>
         <text
           class="cls-5"
           transform="translate(1178.22 798.32) rotate(55.32)"
         ></text>
+        
+        <g id="identitaet" class="pointable">
         <text
           class="cls-5"
           transform="matrix(0.66, -0.75, 0.75, 0.66, 1199.37, 1181.38)"
@@ -196,6 +200,8 @@
         >
           t
         </text>
+        </g>
+        <g id="ausdruck" class="pointable">
         <text
           class="cls-5"
           transform="matrix(0.92, 0.39, -0.39, 0.92, 812.42, 1249.25)"
@@ -238,6 +244,8 @@
         >
           k
         </text>
+      </g>
+        <g id="anziehung" class="pointable">
         <text class="cls-5" transform="translate(649.21 865.85) rotate(102.88)">
           A
         </text>
@@ -268,6 +276,8 @@
         >
           g
         </text>
+      </g>
+      <g id="rolle" class="pointable">
         <text
           class="cls-5"
           transform="matrix(0.68, -0.74, 0.74, 0.68, 745.63, 792.11)"
@@ -289,18 +299,20 @@
         <text class="cls-5" transform="translate(826.91 722.6) rotate(-25.32)">
           e
         </text>
+      </g>
+      <g id="rolle" class="pointable">
         <text class="cls-6" transform="translate(709.15 980.21)">
           GESCHLEC
           <tspan class="cls-7" x="398.2" y="0">H</tspan>
           <tspan class="cls-8" x="453.59" y="0">T</tspan>
-          <title>Hello, World!</title>
         </text>
+      </g>
       </g>
       <g id="Ring" display="unset">
         <g id="koerper1" display="unset">
           <text class="cls-9" transform="translate(1202.45 548.18)">endo</text>
 
-          <text id="inter" class="cls-9" transform="translate(1365.2 330.8)">
+          <text id="inter" class="cls-9 pointable" transform="translate(1365.2 330.8)">
             inter
           </text>
         </g>
@@ -1133,11 +1145,24 @@
 
         //Einzelne Worte anklickbar
         inter.onclick = function () {
-          window.location = 'Lexikon.html#hier';
+          window.location = 'Lexikon.html#ainter';
           document.getElementById('interknopf').click();
-          
-          // Lexikoneintrag anzeigenå
         }
+
+        anziehung.onclick = function () {
+          window.location = 'Lexikon.html#aanziehung';
+          document.getElementById('anziehungButton').click();
+        }
+        koerper.onclick = function () {
+          window.location = 'Lexikon.html#akoerper';
+          document.getElementById('koerperButton').click();
+        }
+        identitaet.onclick = function () {
+          window.location = 'Lexikon.html#aidentitaet';
+          document.getElementById('identitaetButton').click();
+        }
+
+
 
         // Checkboxes
         uterus.onclick = function () {
