@@ -65,7 +65,7 @@ a {
 }
 
 svg {
-  padding-left: 40px;
+  padding-top: 30px;
   padding-right: 40px;
   padding-bottom: 40px;
   user-select: none;
@@ -113,17 +113,13 @@ li a:hover:not(.active) {
 }
 
 video {
-  width: 800px;
-  margin-bottom: 30px;
+  width: 100%;
+  max-width: 800px;
+
   margin-top: 30px;
 }
 
-#ausdruck {
-  font-size: 18px;
-  font-weight: lighter;
-  position: relative;
-  text-align: right;
-}
+
 
 /* LEXIKON */
 
@@ -318,4 +314,8 @@ video {
   font-family: Roboto-Bold, Roboto;
   font-weight: 300;
   fill: gray;
+}
+.festeBreite{
+  max-width: 800px;
+  margin: 0 auto;
 }
