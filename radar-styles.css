@@ -142,7 +142,7 @@ video {
   min-width: 5%;
   position: absolute;
   transform: translate(0%, 0%); /*-50 -50*/
-  top: 50%;
+  top: 380px;
   /*left: 53%;*/
 
   background-color: transparent;
