@@ -131,17 +131,20 @@ video {
 
 .container {
   /* width: 100%; */
+
   width: 90%;
   min-width: 5%;
   position: absolute;
-  transform: translate(-50%, -50%);
-  top: 199%;
+  transform: translate(0%, 0%); /*-50 -50*/
+  top: 50%;
   /*left: 53%;*/
-  left: 49%;
+
+  background-color: transparent;
 }
 
 .wrapper {
   background-color: transparent;
+
   margin-bottom: 0px;
   padding: 0px 0px; /*15 40*/
   box-shadow: none;
@@ -165,6 +168,7 @@ video {
 }
 .content {
   position: relative;
+
   font-size: 14px;
   text-align: left;
   line-height: 30px;
