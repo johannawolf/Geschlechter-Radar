@@ -1,15 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-/*
-Thin            100     
-Extra Light     200
-Light           300
-Regular         400
-Medium          500
-Semi-Bold       600
-Bold            700
-Extra-Bold      800
-Black           900
-*/
 
 html {
   background-image: url(Images/Background.png);
@@ -49,13 +38,11 @@ p {
   font-size: 18px;
   display: inline;
 }
-
 br {
   font-family: Roboto;
   font-weight: 100;
   font-size: 14px;
 }
-
 a {
   color: black;
   font-family: Roboto;
@@ -63,24 +50,20 @@ a {
   font-size: 18px;
   display: inline;
 }
-
 svg {
   padding-top: 30px;
   padding-right: 40px;
   padding-bottom: 40px;
   user-select: none;
 }
-
 .Ring2 {
   padding-top: 90px;
 }
-
 .draggableLetter,
 .draggable,
 .pointable {
   cursor: pointer;
 }
-
 img {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -111,16 +94,12 @@ li a:hover:not(.active) {
   font-size: 22px;
   font-weight: 700;
 }
-
 video {
   width: 100%;
   max-width: 800px;
 
   margin-top: 30px;
 }
-
-/* LEXIKON */
-
 *,
 *:before,
 *:after {
@@ -128,7 +107,6 @@ video {
   margin: 0;
   box-sizing: border-box;
 }
-
 .container {
   width: 80%;
   min-width: 5%;
@@ -138,7 +116,6 @@ video {
   top: 380px;
   background-color: transparent;
 }
-
 .wrapper {
   background-color: transparent;
   margin-bottom: 0px;
@@ -172,14 +149,11 @@ video {
   transition: all 1s;
   z-index: 1;
 }
-
 .containerBild {
   display: flex;
   align-items: center;
   justify-content: left;
 }
-
-/*LEXIKON ENDE*/
 
 .tooltip {
   position: relative;
@@ -195,16 +169,12 @@ video {
   text-align: center;
   border-radius: 6px;
   padding: 5px 0;
-
-  /* Position the tooltip */
   position: absolute;
   z-index: 1;
 }
-
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
-
 .pie {
   fill: #8cc63f;
 }
@@ -257,7 +227,6 @@ video {
 .cls-12 {
   letter-spacing: -0.01em;
 }
-
 .cls-21 {
   font-size: 36px;
   font-family: Roboto-Light, Roboto;
@@ -297,11 +266,9 @@ video {
 .cls-30 {
   letter-spacing: -0.01em;
 }
-
 .cls-19 {
   fill: gray;
 }
-
 .XRASP {
   font-size: 37px;
   font-family: Roboto-Bold, Roboto;
