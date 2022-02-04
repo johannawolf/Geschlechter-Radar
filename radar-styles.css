@@ -12,7 +12,7 @@ Black           900
 */
 
 html {
-  background-image: url(Background.png);
+  background-image: url(/Images/Background.png);
   background-size: 100% 100%;
   background-attachment: fixed;
 }
@@ -119,8 +119,6 @@ video {
   margin-top: 30px;
 }
 
-
-
 /* LEXIKON */
 
 *,
@@ -132,23 +130,18 @@ video {
 }
 
 .container {
-  /* width: 100%; */
-
   width: 90%;
   min-width: 5%;
   position: absolute;
-  transform: translate(0%, 0%); /*-50 -50*/
+  transform: translate(0%, 0%);
   top: 380px;
-  /*left: 53%;*/
-
   background-color: transparent;
 }
 
 .wrapper {
   background-color: transparent;
-
   margin-bottom: 0px;
-  padding: 0px 0px; /*15 40*/
+  padding: 0px 0px;
   box-shadow: none;
 }
 .toggle,
@@ -170,7 +163,6 @@ video {
 }
 .content {
   position: relative;
-
   font-size: 14px;
   text-align: left;
   line-height: 30px;
@@ -315,7 +307,7 @@ video {
   font-weight: 300;
   fill: gray;
 }
-.festeBreite{
+.festeBreite {
   max-width: 800px;
   margin: 0 auto;
 }
