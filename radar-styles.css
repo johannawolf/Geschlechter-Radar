@@ -130,8 +130,9 @@ video {
 }
 
 .container {
-  width: 90%;
+  width: 80%;
   min-width: 5%;
+  max-width: 800px;
   position: absolute;
   transform: translate(0%, 0%);
   top: 380px;
