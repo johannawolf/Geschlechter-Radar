@@ -279,3 +279,10 @@ video {
   max-width: 800px;
   margin: 0 auto;
 }
+
+.switch{
+  color:white;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 42px;
+}
