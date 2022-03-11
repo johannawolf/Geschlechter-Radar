@@ -286,3 +286,21 @@ video {
   font-weight: 700;
   font-size: 42px;
 }
+.tooltipBG {
+  fill: #fff;
+  opacity: 0.5;
+}
+.tooltipText {
+  font-size: 48px;
+  fill: #aeacac;
+  font-family: Roboto-Regular, Roboto;
+}
+.tooltip3 {
+  letter-spacing: -0.02em;
+}
+.tooltip5 {
+  letter-spacing: -0.02em;
+}
+.tooltip7 {
+  font-size: 47px;
+}
