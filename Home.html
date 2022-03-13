@@ -1334,35 +1334,108 @@
             />
           </g>
         </g>
-              <!-- Tooltips -->
-      <rect class="tooltipBG" x="973.72" y="0.5" width="514" height="134" />
-      <rect class="tooltipBG" x="208.22" width="718" height="134" />
-      <rect class="tooltipBG" x="1.22" y="765" width="550" height="134" />
+              
+        <!-- Tooltips -->
+      <g id="tooltipKoerper" visibility="hidden">
+        <rect class="tooltipBG" x="973.72" y="0.5" width="514" height="134" />
+        <text class="tooltipText" transform="translate(995.5 54.42)">
+          <tspan class="tooltip3">Welche Merkmale hat</tspan>
+          <tspan x="0" y="57.6">dein Körper?</tspan>
+        </text>
+
+        </g>
+        <script type="text/ecmascript">
+          <![CDATA[ (function() { var tooltip2 =
+          document.getElementById('tooltipKoerper'); var triggers =
+          document.getElementsByClassName('tooltip-trigger4'); for (var i = 0; i
+          < triggers.length; i++) { triggers[i].addEventListener('mousemove',
+          showTooltip); triggers[i].addEventListener('mouseout', hideTooltip); }
+          function showTooltip(evt) { tooltip2.setAttributeNS(null,
+          "visibility", "visible"); } function hideTooltip(evt) {
+          tooltip2.setAttributeNS(null, "visibility", "hidden"); } })() ]]>
+        </script>
+
+    <g id="tooltipIdentitaet" visibility="hidden">
       <rect class="tooltipBG" x="1353.22" y="765" width="547" height="134" />
-      <rect class="tooltipBG" x="746.22" y="1433" width="462" height="134" />
-      <text class="tooltipText" transform="translate(995.5 54.42)">
-        <tspan class="tooltip3">Welche Merkmale hat</tspan>
-        <tspan x="0" y="57.6">dein Körper?</tspan>
-      </text>
+     <rect class="tooltipBG" x="1353.22" y="765" width="547" height="134" />
       <text class="tooltipText" transform="translate(1365 814.2)">
         Mit welchem Geschlecht
         <tspan x="0" y="57.6">identifizierst du dich?</tspan>
       </text>
+      </g>
+
+      <script type="text/ecmascript">
+        <![CDATA[ (function() { var tooltip2 =
+        document.getElementById('tooltipIdentitaet'); var triggers =
+        document.getElementsByClassName('tooltip-trigger5'); for (var i = 0; i
+        < triggers.length; i++) { triggers[i].addEventListener('mousemove',
+        showTooltip); triggers[i].addEventListener('mouseout', hideTooltip); }
+        function showTooltip(evt) { tooltip2.setAttributeNS(null,
+        "visibility", "visible"); } function hideTooltip(evt) {
+        tooltip2.setAttributeNS(null, "visibility", "hidden"); } })() ]]>
+      </script>
+
+      <g id="tooltipAusdruck" visibility="hidden">   
+      <rect class="tooltipBG" x="746.22" y="1433" width="462" height="134" />
+
       <text class="tooltipText" transform="translate(772 1484.2)">
         Wie drückst du dich
         <tspan x="0" y="57.6">nach außen aus?</tspan>
-      </text>
+      </text>   
+      </g>
+
+      <script type="text/ecmascript">
+        <![CDATA[ (function() { var tooltip2 =
+        document.getElementById('tooltipAusdruck'); var triggers =
+        document.getElementsByClassName('tooltip-trigger2'); for (var i = 0; i
+        < triggers.length; i++) { triggers[i].addEventListener('mousemove',
+        showTooltip); triggers[i].addEventListener('mouseout', hideTooltip); }
+        function showTooltip(evt) { tooltip2.setAttributeNS(null,
+        "visibility", "visible"); } function hideTooltip(evt) {
+        tooltip2.setAttributeNS(null, "visibility", "hidden"); } })() ]]>
+      </script>
+
+      <g id="tooltipAnziehung" visibility="hidden">
+        <rect class="tooltipBG" x="1.22" y="765" width="550" height="134" />
       <text class="tooltipText" transform="translate(0 816.35)">
         <tspan class="tooltip5">Von welchen Personen</tspan>
         <tspan class="tooltip7">
           <tspan x="0" y="56.4">fühlst du dich angezogen?</tspan>
         </tspan>
       </text>
+      </g>
+
+      <script type="text/ecmascript">
+        <![CDATA[ (function() { var tooltip =
+        document.getElementById('tooltipAnziehung'); var triggers =
+        document.getElementsByClassName('tooltip-trigger1'); for (var i = 0; i
+        < triggers.length; i++) { triggers[i].addEventListener('mousemove',
+        showTooltip); triggers[i].addEventListener('mouseout', hideTooltip); }
+        function showTooltip(evt) { tooltip.setAttributeNS(null, "visibility",
+        "visible"); } function hideTooltip(evt) { tooltip.setAttributeNS(null,
+        "visibility", "hidden"); } })() ]]>
+      </script>
+
+      <g id="tooltipRolle" visibility="hidden">
+      <rect class="tooltipBG" x="208.22" width="718" height="134" />
       <text class="tooltipText" transform="translate(233 55)">
         Wie sieht die Rolle aus, die du in
         <tspan x="0" y="57.6">der Gesellschaft einnimmst?</tspan>
       </text>
-      </svg>
+
+      </g>
+      <script type="text/ecmascript">
+        <![CDATA[ (function() { var tooltip2 =
+        document.getElementById('tooltipRolle'); var triggers =
+        document.getElementsByClassName('tooltip-trigger3'); for (var i = 0; i
+        < triggers.length; i++) { triggers[i].addEventListener('mousemove',
+        showTooltip); triggers[i].addEventListener('mouseout', hideTooltip); }
+        function showTooltip(evt) { tooltip2.setAttributeNS(null,
+        "visibility", "visible"); } function hideTooltip(evt) {
+        tooltip2.setAttributeNS(null, "visibility", "hidden"); } })() ]]>
+      </script>
+    </svg>
+
 
       <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
       <script language="javascript" type="text/javascript">
@@ -1696,141 +1769,6 @@
           d3.selectAll('.draggableLetter').call(dragLetter)
         })
       </script>
-
-      <!-- Tooltips -->
-   
-  
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
-        viewBox="0 0 1920 200"
-      >
-        <g id="tooltipAnziehung" visibility="hidden">
-          <text
-            style="font-family: Roboto; font-weight: 300; font-size: 55px;"
-            x="390"
-            y="50"
-          >
-            Anziehung: Von welchen Personen fühlst du dich
-          </text>
-          <text
-            style="font-family: Roboto; font-weight: 300; font-size: 55px;"
-            x="280"
-            y="130"
-          >
-            sexuell, romantisch, ästhetisch oder platonisch angezogen?
-          </text>
-        </g>
-        <script type="text/ecmascript">
-          <![CDATA[ (function() { var tooltip =
-          document.getElementById('tooltipAnziehung'); var triggers =
-          document.getElementsByClassName('tooltip-trigger1'); for (var i = 0; i
-          < triggers.length; i++) { triggers[i].addEventListener('mousemove',
-          showTooltip); triggers[i].addEventListener('mouseout', hideTooltip); }
-          function showTooltip(evt) { tooltip.setAttributeNS(null, "visibility",
-          "visible"); } function hideTooltip(evt) { tooltip.setAttributeNS(null,
-          "visibility", "hidden"); } })() ]]>
-        </script>
-
-        <g id="tooltipKoerper" visibility="hidden">
-          <text
-            style="font-family: Roboto; font-weight: 300; font-size: 55px;"
-            x="450"
-            y="50"
-          >
-            Körper: Welche Merkmale hat dein Körper?
-          </text>
-        </g>
-        <script type="text/ecmascript">
-          <![CDATA[ (function() { var tooltip2 =
-          document.getElementById('tooltipKoerper'); var triggers =
-          document.getElementsByClassName('tooltip-trigger4'); for (var i = 0; i
-          < triggers.length; i++) { triggers[i].addEventListener('mousemove',
-          showTooltip); triggers[i].addEventListener('mouseout', hideTooltip); }
-          function showTooltip(evt) { tooltip2.setAttributeNS(null,
-          "visibility", "visible"); } function hideTooltip(evt) {
-          tooltip2.setAttributeNS(null, "visibility", "hidden"); } })() ]]>
-        </script>
-        <g id="tooltipIdentitaet" visibility="hidden">
-          <text
-            style="font-family: Roboto; font-weight: 300; font-size: 55px;"
-            x="300"
-            y="50"
-          >
-            Identität: Mit welchem Geschlecht identifizierst du dich?
-          </text>
-        </g>
-
-        <script type="text/ecmascript">
-          <![CDATA[ (function() { var tooltip2 =
-          document.getElementById('tooltipIdentitaet'); var triggers =
-          document.getElementsByClassName('tooltip-trigger5'); for (var i = 0; i
-          < triggers.length; i++) { triggers[i].addEventListener('mousemove',
-          showTooltip); triggers[i].addEventListener('mouseout', hideTooltip); }
-          function showTooltip(evt) { tooltip2.setAttributeNS(null,
-          "visibility", "visible"); } function hideTooltip(evt) {
-          tooltip2.setAttributeNS(null, "visibility", "hidden"); } })() ]]>
-        </script>
-
-        <g id="tooltipAusdruck" visibility="hidden">
-          <text
-            style="font-family: Roboto; font-weight: 300; font-size: 55px;"
-            x="420"
-            y="50"
-          >
-            Ausdruck: Wie drückst du dich nach außen aus?
-          </text>
-          <text
-            style="font-family: Roboto; font-weight: 300; font-size: 55px;"
-            x="420"
-            y="110"
-          >
-            z.B. mit Kleidung, Frisur, Art der Kommunikation
-          </text>
-        </g>
-
-        <script type="text/ecmascript">
-          <![CDATA[ (function() { var tooltip2 =
-          document.getElementById('tooltipAusdruck'); var triggers =
-          document.getElementsByClassName('tooltip-trigger2'); for (var i = 0; i
-          < triggers.length; i++) { triggers[i].addEventListener('mousemove',
-          showTooltip); triggers[i].addEventListener('mouseout', hideTooltip); }
-          function showTooltip(evt) { tooltip2.setAttributeNS(null,
-          "visibility", "visible"); } function hideTooltip(evt) {
-          tooltip2.setAttributeNS(null, "visibility", "hidden"); } })() ]]>
-        </script>
-
-        <g id="tooltipRolle" visibility="hidden">
-          <text
-            style="font-family: Roboto; font-weight: 300; font-size: 55px;"
-            x="250"
-            y="50"
-          >
-            Rolle: Wie sieht die Rolle aus, die du in der Gesellschaft
-            einnimmst?
-          </text>
-          <text
-            style="font-family: Roboto; font-weight: 300; font-size: 55px;"
-            x="400"
-            y="110"
-          >
-            z.B. in Beruf, Familie, Freundschaften, Beziehungen
-          </text>
-        </g>
-        <script type="text/ecmascript">
-          <![CDATA[ (function() { var tooltip2 =
-          document.getElementById('tooltipRolle'); var triggers =
-          document.getElementsByClassName('tooltip-trigger3'); for (var i = 0; i
-          < triggers.length; i++) { triggers[i].addEventListener('mousemove',
-          showTooltip); triggers[i].addEventListener('mouseout', hideTooltip); }
-          function showTooltip(evt) { tooltip2.setAttributeNS(null,
-          "visibility", "visible"); } function hideTooltip(evt) {
-          tooltip2.setAttributeNS(null, "visibility", "hidden"); } })() ]]>
-        </script>
-      </svg>
-
-
-
 
       <footer>
         <p style="font-weight: 400; font-size: 14px; color: grey;">
