@@ -304,3 +304,10 @@ video {
 .tooltip7 {
   font-size: 47px;
 }
+.boxes {
+  fill: #eeeeee;
+  fill-opacity: 0.1;
+  stroke: gray;
+  stroke-miterlimit: 10;
+  stroke-width: 2.5px;
+}
