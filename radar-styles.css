@@ -74,7 +74,7 @@ ul {
   padding: 0;
   overflow: hidden;
   font-family: Roboto;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 li {
   float: left;
@@ -280,8 +280,8 @@ video {
   margin: 0 auto;
 }
 
-.switch{
-  color:white;
+.switch {
+  color: white;
   font-family: Roboto;
   font-weight: 700;
   font-size: 42px;
