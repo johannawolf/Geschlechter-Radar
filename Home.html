@@ -1337,7 +1337,7 @@
 
         <!-- Tooltips -->
 
-        <g id="tooltipKoerper" visibility="hidden">
+        <g id="tooltipKoerper" visibility="hidden" opacity="1">
           <rect class="tooltipBG" x="990" y="50" width="470" height="134" />
           <text class="tooltipText" transform="translate(1000 104.42)">
             <tspan class="tooltip3">Welche Merkmale hat</tspan>
@@ -1355,7 +1355,7 @@
           tooltip2.setAttributeNS(null, "visibility", "hidden"); } })() ]]>
         </script>
 
-        <g id="tooltipIdentitaet" visibility="hidden">
+        <g id="tooltipIdentitaet" visibility="hidden" opacity="1">
           <rect
             class="tooltipBG"
             x="1343.22"
@@ -1380,7 +1380,7 @@
           tooltip2.setAttributeNS(null, "visibility", "hidden"); } })() ]]>
         </script>
 
-        <g id="tooltipAusdruck" visibility="hidden">
+        <g id="tooltipAusdruck" visibility="hidden" opacity="1">
           <rect
             class="tooltipBG"
             x="746.22"
@@ -1406,7 +1406,7 @@
           tooltip2.setAttributeNS(null, "visibility", "hidden"); } })() ]]>
         </script>
 
-        <g id="tooltipAnziehung" visibility="hidden">
+        <g id="tooltipAnziehung" visibility="hidden" opacity="1">
           <rect class="tooltipBG" x="10" y="835" width="550" height="134" />
           <text class="tooltipText" transform="translate(10 890)">
             <tspan class="tooltip5">Von welchen Personen</tspan>
@@ -1427,7 +1427,7 @@
           "visibility", "hidden"); } })() ]]>
         </script>
 
-        <g id="tooltipRolle" visibility="hidden">
+        <g id="tooltipRolle" visibility="hidden" opacity="1">
           <rect class="tooltipBG" x="208.22" y="50" width="718" height="134" />
           <text class="tooltipText" transform="translate(233 104.42)">
             Wie sieht die Rolle aus, die du in
@@ -1459,10 +1459,12 @@
             if (switchRolle == false) {
               document.getElementById('rolle1').style.display = 'none'
               document.getElementById('rolle2').style.display = 'unset'
+              document.getElementById('tooltipRolle').style.opacity = '0'
               switchRolle = true
             } else if (switchRolle == true) {
               document.getElementById('rolle2').style.display = 'none'
               document.getElementById('rolle1').style.display = 'unset'
+              document.getElementById('tooltipRolle').style.opacity = '1'
               switchRolle = false
             }
           }
@@ -1470,10 +1472,12 @@
             if (switchKoerper == false) {
               document.getElementById('koerper1').style.display = 'none'
               document.getElementById('koerper2').style.display = 'unset'
+              document.getElementById('tooltipKoerper').style.opacity = '0'
               switchKoerper = true
             } else if (switchKoerper == true) {
               document.getElementById('koerper1').style.display = 'unset'
               document.getElementById('koerper2').style.display = 'none'
+              document.getElementById('tooltipKoerper').style.opacity = '1'
               switchKoerper = false
             }
           }
@@ -1481,10 +1485,12 @@
             if (switchIdentitaet == false) {
               document.getElementById('identitaet1').style.display = 'none'
               document.getElementById('identitaet2').style.display = 'unset'
+              document.getElementById('tooltipIdentitaet').style.opacity = '0'
               switchIdentitaet = true
             } else if (switchIdentitaet == true) {
               document.getElementById('identitaet1').style.display = 'unset'
               document.getElementById('identitaet2').style.display = 'none'
+              document.getElementById('tooltipIdentitaet').style.opacity = '1'
               switchIdentitaet = false
             }
           }
@@ -1492,10 +1498,12 @@
             if (switchAusdruck == false) {
               document.getElementById('ausdruck1').style.display = 'none'
               document.getElementById('ausdruck2').style.display = 'unset'
+              document.getElementById('tooltipAusdruck').style.opacity = '0'
               switchAusdruck = true
             } else if (switchAusdruck == true) {
               document.getElementById('ausdruck1').style.display = 'unset'
               document.getElementById('ausdruck2').style.display = 'none'
+              document.getElementById('tooltipAusdruck').style.opacity = '1'
               switchAusdruck = false
             }
           }
@@ -1503,10 +1511,12 @@
             if (switchAnziehung == false) {
               document.getElementById('anziehung1').style.display = 'none'
               document.getElementById('anziehung2').style.display = 'unset'
+              document.getElementById('tooltipAnziehung').style.opacity = '0'
               switchAnziehung = true
             } else if (switchAnziehung == true) {
               document.getElementById('anziehung1').style.display = 'unset'
               document.getElementById('anziehung2').style.display = 'none'
+              document.getElementById('tooltipAnziehung').style.opacity = '1'
               switchAnziehung = false
             }
           }
