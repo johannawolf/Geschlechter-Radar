@@ -1867,6 +1867,10 @@
           d3.selectAll('.draggable').call(drag)
           d3.selectAll('.draggableLetter').call(dragLetter)
         })
+
+
+        let radarHash = window.location.hash.slice(1);
+        document.getElementById(radarHash).click();
       </script>
 
       <footer>
@@ -1875,11 +1879,9 @@
         </p>
         <a
           style="font-weight: 400; font-size: 14px; color: grey;"
-          href="www.chri-h.ch/geschlechter-radar"
+          href="https://chri-h.ch/geschlechter-radar"
         >
-          Chri Hübscher
-        </a>
-        <p style="font-weight: 400; font-size: 14px; color: grey;">.</p>
+        Chri Hübscher</a>
         <br />
         <br />
       </footer>
