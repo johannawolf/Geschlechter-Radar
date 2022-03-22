@@ -44,7 +44,6 @@
       <p>Wie genau das funktioniert, erfährst du hier:</p>
 
       <video src="Images/Video_v2.mp4" controls></video>
-      <a name="aradar"></a>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -1359,6 +1358,7 @@
             </text>
           </g>
         </g>
+        <a name="switch1"></a>
         <g id="switch1" class="pointable">
           <circle fill="grey" id="dotw1" cx="1180" cy="645" r="40" />
           <g transform="translate(1144 654) scale(0.055) rotate(295)">
@@ -1373,6 +1373,7 @@
             />
           </g>
         </g>
+        <a name="switch2"></a>
         <g id="switch2" class="switch2 pointable">
           <circle fill="grey" id="dotw2" cx="1325" cy="1075" r="40" />
           <g transform="translate(1308 1042) scale(0.055) rotate(10)">
@@ -1388,6 +1389,7 @@
             />
           </g>
         </g>
+        <a name="switch3"></a>
         <g id="switch3" class="pointable">
           <circle fill="grey" id="dotw3" cx="960" cy="1347" r="40" />
           <g transform="translate(985 1317) scale(0.055) rotate(80)">
@@ -1402,6 +1404,7 @@
             />
           </g>
         </g>
+        <a name="switch4"></a>
         <g id="switch4" class="pointable">
           <circle fill="grey" id="dotw4" cx="603" cy="1075" r="40" />
           <g transform="translate(635 1095) scale(0.055) rotate(160)">
@@ -1416,6 +1419,7 @@
             />
           </g>
         </g>
+        <a name="switch5"></a>
         <g id="switch5" class="pointable">
           <circle fill="grey" id="dotw5" cx="736" cy="645" r="40" />
           <g transform="translate(728 682) scale(0.055) rotate(230)">
@@ -1618,7 +1622,6 @@
           }
 
           //Einzelne Worte anklickbar
-
           geschlecht.onclick = function () {
             window.open("Lexikon.html#ageschlecht")
           }
@@ -1862,15 +1865,14 @@
                 'translate(' + x + ' ' + y + ')',
               )
             }
+            d3.selectAll('.draggable').call(drag)
+            d3.selectAll('.draggableLetter').call(dragLetter)
           }
 
-          d3.selectAll('.draggable').call(drag)
-          d3.selectAll('.draggableLetter').call(dragLetter)
-        })
-
-
         let radarHash = window.location.hash.slice(1);
-        document.getElementById(radarHash).click();
+        document.getElementById(radarHash).click();  
+        });
+        
       </script>
 
       <footer>
