@@ -1389,7 +1389,7 @@
             />
           </g>
         </g>
-        <a name="switch3"></a>
+       <!--  <a name="switch3"></a> -->
         <g id="switch3" class="pointable">
           <circle fill="grey" id="dotw3" cx="960" cy="1347" r="40" />
           <g transform="translate(985 1317) scale(0.055) rotate(80)">
@@ -1870,6 +1870,7 @@
           }
 
         let radarHash = window.location.hash.slice(1);
+        console.log(document.getElementById(radarHash));
         document.getElementById(radarHash).click();  
         });
         
