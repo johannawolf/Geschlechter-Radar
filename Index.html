@@ -1853,7 +1853,6 @@
           function dragmoveLetter(d) {
             let x = d.x
             let y = d.y
-            console.log(d3.select(this).attr('dragstartx'))
             if (
               x > d3.select(this).attr('dragstartx') &&
               x < d3.select(this).attr('dragendx') &&
@@ -1865,14 +1864,44 @@
                 'translate(' + x + ' ' + y + ')',
               )
             }
+            
+          }
             d3.selectAll('.draggable').call(drag)
             d3.selectAll('.draggableLetter').call(dragLetter)
-          }
 
         let radarHash = window.location.hash.slice(1);
         console.log(document.getElementById(radarHash));
         document.getElementById(radarHash).click();  
         });
+
+       /* 
+       let switch3click = function () {
+            if (switchAusdruck == false) {
+              document.getElementById('ausdruck1').style.display = 'none'
+              document.getElementById('ausdruck2').style.display = 'unset'
+              document.getElementById('tooltipAusdruck').style.opacity = '0'
+              switchAusdruck = true
+            } else if (switchAusdruck == true) {
+              document.getElementById('ausdruck1').style.display = 'unset'
+              document.getElementById('ausdruck2').style.display = 'none'
+              document.getElementById('tooltipAusdruck').style.opacity = '1'
+              switchAusdruck = false
+            }
+          }
+          switch3.onclick = switch3click;     
+          
+          let radarHash = window.location.hash.slice(1);
+          if (radarHash && radarHash.length > 0) {
+            switch (radarHash) {
+              case "switch3":
+                switch3click();
+                break;
+              case "switch2":
+                switch2click();
+                break;
+            } 
+          }
+       */
         
       </script>
 
