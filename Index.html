@@ -1555,20 +1555,7 @@
         var switchAnziehung = false
 
         document.addEventListener('DOMContentLoaded', function () {
-          switch5.onclick = function () {
-            if (switchRolle == false) {
-              document.getElementById('rolle1').style.display = 'none'
-              document.getElementById('rolle2').style.display = 'unset'
-              document.getElementById('tooltipRolle').style.opacity = '0'
-              switchRolle = true
-            } else if (switchRolle == true) {
-              document.getElementById('rolle2').style.display = 'none'
-              document.getElementById('rolle1').style.display = 'unset'
-              document.getElementById('tooltipRolle').style.opacity = '1'
-              switchRolle = false
-            }
-          }
-          switch1.onclick = function () {
+          let switch1click = function () {
             if (switchKoerper == false) {
               document.getElementById('koerper1').style.display = 'none'
               document.getElementById('koerper2').style.display = 'unset'
@@ -1581,7 +1568,7 @@
               switchKoerper = false
             }
           }
-          switch2.onclick = function () {
+          let switch2click = function () {
             if (switchIdentitaet == false) {
               document.getElementById('identitaet1').style.display = 'none'
               document.getElementById('identitaet2').style.display = 'unset'
@@ -1593,8 +1580,8 @@
               document.getElementById('tooltipIdentitaet').style.opacity = '1'
               switchIdentitaet = false
             }
-          }
-          switch3.onclick = function () {
+          }  
+          let switch3click = function () {
             if (switchAusdruck == false) {
               document.getElementById('ausdruck1').style.display = 'none'
               document.getElementById('ausdruck2').style.display = 'unset'
@@ -1607,7 +1594,7 @@
               switchAusdruck = false
             }
           }
-          switch4.onclick = function () {
+          let switch4click = function () {
             if (switchAnziehung == false) {
               document.getElementById('anziehung1').style.display = 'none'
               document.getElementById('anziehung2').style.display = 'unset'
@@ -1619,6 +1606,46 @@
               document.getElementById('tooltipAnziehung').style.opacity = '1'
               switchAnziehung = false
             }
+          }
+          let switch5click = function () {
+            if (switchRolle == false) {
+              document.getElementById('rolle1').style.display = 'none'
+              document.getElementById('rolle2').style.display = 'unset'
+              document.getElementById('tooltipRolle').style.opacity = '0'
+              switchRolle = true
+            } else if (switchRolle == true) {
+              document.getElementById('rolle2').style.display = 'none'
+              document.getElementById('rolle1').style.display = 'unset'
+              document.getElementById('tooltipRolle').style.opacity = '1'
+              switchRolle = false
+            }
+          }
+
+        switch1.onclick = switch1click;
+        switch2.onclick = switch2click;
+        switch3.onclick = switch3click;
+        switch4.onclick = switch4click;
+        switch5.onclick = switch5click;
+
+        let radarHash = window.location.hash.slice(1);
+          if (radarHash && radarHash.length > 0) {
+            switch (radarHash) {
+              case "switch1":
+                switch1click();
+                break;
+              case "switch2":
+                switch2click();
+                break;
+              case "switch3":
+                switch3click();
+                break;
+              case "switch4":
+                switch4click();
+                break;
+              case "switch5":
+                switch5click();
+                break;
+            } 
           }
 
           //Einzelne Worte anklickbar
@@ -1869,39 +1896,9 @@
             d3.selectAll('.draggable').call(drag)
             d3.selectAll('.draggableLetter').call(dragLetter)
 
-        let radarHash = window.location.hash.slice(1);
-        console.log(document.getElementById(radarHash));
-        document.getElementById(radarHash).click();  
+        
         });
 
-       /* 
-       let switch3click = function () {
-            if (switchAusdruck == false) {
-              document.getElementById('ausdruck1').style.display = 'none'
-              document.getElementById('ausdruck2').style.display = 'unset'
-              document.getElementById('tooltipAusdruck').style.opacity = '0'
-              switchAusdruck = true
-            } else if (switchAusdruck == true) {
-              document.getElementById('ausdruck1').style.display = 'unset'
-              document.getElementById('ausdruck2').style.display = 'none'
-              document.getElementById('tooltipAusdruck').style.opacity = '1'
-              switchAusdruck = false
-            }
-          }
-          switch3.onclick = switch3click;     
-          
-          let radarHash = window.location.hash.slice(1);
-          if (radarHash && radarHash.length > 0) {
-            switch (radarHash) {
-              case "switch3":
-                switch3click();
-                break;
-              case "switch2":
-                switch2click();
-                break;
-            } 
-          }
-       */
         
       </script>
 
