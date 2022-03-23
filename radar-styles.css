@@ -154,6 +154,9 @@ video {
   display: flex;
   align-items: center;
   justify-content: left;
+  min-width: 5%;
+  max-width: 1000px;
+  height: auto;
 }
 
 .tooltip {
