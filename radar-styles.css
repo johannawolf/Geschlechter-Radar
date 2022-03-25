@@ -115,12 +115,15 @@ video {
   transform: translate(0%, 0%);
   top: 411px;
   background-color: transparent;
+  margin-right: 300px;
 }
 .wrapper {
   background-color: transparent;
   margin-bottom: 0px;
   padding: 0px 0px;
   box-shadow: none;
+  min-width: 5%;
+  max-width: 1000px;
 }
 .toggle,
 .content {
@@ -154,9 +157,6 @@ video {
   display: flex;
   align-items: center;
   justify-content: left;
-  min-width: 5%;
-  max-width: 1000px;
-  height: auto;
 }
 
 .tooltip {
